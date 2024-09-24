@@ -7,14 +7,14 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
+          <p className="capitalize" style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">AR Akash </span>
             from <span className="purple"> DHAKA, BANGLADESH.</span>
             <br />
             I am currently employed as a software developer at Juspay.
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            I ave completed Frontend Web Development With REACT at Creative
+            It.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
