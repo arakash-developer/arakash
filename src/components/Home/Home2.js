@@ -66,44 +66,52 @@ function Home2() {
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
-                <a
-                  href="https://github.com/akash100a"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
+                <div className="icon-colour home-social-icons flex justify-center bg-red-500">
+                  <a
+                    href="https://github.com/akash100a"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour w-full h-full flex justify-center items-center"
+                  >
+                    <AiFillGithub />
+                  </a>
+                </div>
               </li>
               <li className="social-icons">
-                <a
-                  href="https://x.com/arakash100"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
+                <div className="icon-colour home-social-icons flex justify-center bg-red-500">
+                  <a
+                    href="https://x.com/arakash100"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour w-full h-full flex justify-center items-center"
+                  >
+                    <AiOutlineTwitter />
+                  </a>
+                </div>
               </li>
               <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/ar-akash-52644332b/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
+                <div className="icon-colour home-social-icons flex justify-center bg-red-500">
+                  <a
+                    href="https://www.linkedin.com/in/ar-akash-52644332b/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour w-full h-full flex justify-center items-center"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                </div>
               </li>
               <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/arakash200/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
+                <div className="icon-colour home-social-icons flex justify-center bg-red-500">
+                  <a
+                    href="https://www.instagram.com/arakash200/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour w-full h-full flex justify-center items-center"
+                  >
+                    <AiFillInstagram />
+                  </a>
+                </div>
               </li>
             </ul>
           </Col>
