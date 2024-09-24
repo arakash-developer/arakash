@@ -14,8 +14,10 @@ function ProjectCards(props) {
           {props.description}
         </Card.Text>
         <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
+         <div className="flex items-center gap-x-1">
+         <BsGithub /> &nbsp;
+         {props.isBlog ? "Blog" : "GitHub"}
+         </div>
         </Button>
         {"\n"}
         {"\n"}
@@ -28,9 +30,12 @@ function ProjectCards(props) {
             href={props.demoLink}
             target="_blank"
             style={{ marginLeft: "10px" }}
+            className="flex"
           >
+            <div className="flex items-center gap-x-1">
             <CgWebsite /> &nbsp;
             {"Demo"}
+            </div>
           </Button>
         )}
       </Card.Body>
