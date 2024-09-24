@@ -25,10 +25,10 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
+              title="Orebi Ecommarce"
               description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
               ghLink=""
-              demoLink="chatify"
+              demoLink="https://orebi4.vercel.app/"
             />
           </Col>
 
