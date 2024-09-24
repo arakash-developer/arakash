@@ -55,7 +55,10 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <div className="flex items-center gap-x-2">
+                  <AiOutlineHome style={{ marginBottom: "2px" }} />
+                  Home
+                </div>
               </Nav.Link>
             </Nav.Item>
 
@@ -65,7 +68,10 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <div className="flex items-center gap-x-2">
+                  <AiOutlineUser style={{ marginBottom: "2px" }} />
+                  About
+                </div>
               </Nav.Link>
             </Nav.Item>
 
@@ -75,20 +81,25 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
+                <div className="flex items-center gap-x-2">
+                  <AiOutlineFundProjectionScreen
+                    style={{ marginBottom: "2px" }}
+                  />{" "}
+                  Projects
+                </div>
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="/resume3"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <div className="flex items-center gap-x-2">
+                  <CgFileDocument style={{ marginBottom: "2px" }} />
+                  Resume
+                </div>
               </Nav.Link>
             </Nav.Item>
 
@@ -98,7 +109,10 @@ function NavBar() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <div className="flex items-center gap-x-2">
+                  <ImBlog style={{ marginBottom: "2px" }} />
+                  Blogs
+                </div>
               </Nav.Link>
             </Nav.Item>
 
@@ -108,8 +122,10 @@ function NavBar() {
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <div className="flex items-center gap-x-2">
+                  <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
+                  <AiFillStar style={{ fontSize: "1.1em" }} />
+                </div>
               </Button>
             </Nav.Item>
           </Nav>
