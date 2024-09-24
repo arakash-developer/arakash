@@ -23,47 +23,74 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        {/* <CgCPlusPlus /> */}
-        <SiNextdotjs />
+        <div className="flex justify-center w-full items-center">
+          <SiNextdotjs />
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons flex justify-center">
-        <DiJavascript1 />
+        <div className="flex justify-center w-full items-center">
+          <DiJavascript1 />
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons flex justify-center">
-        <TbBrandGolang />
+        <div className="flex justify-center w-full items-center">
+          <TbBrandGolang />
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons flex justify-center">
-        <DiNodejs />
+        <div className="flex justify-center w-full items-center">
+          <DiNodejs />
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons flex justify-center">
-        <DiReact />
+        <div className="flex justify-center w-full items-center">
+          <DiReact />
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons flex justify-center">
-        <SiSolidity />
+        <div className="flex justify-center w-full items-center">
+          <SiSolidity />
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons flex justify-center">
-        <DiMongodb />
+        <div className="flex justify-center w-full items-center">
+          <DiMongodb />
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons flex justify-center">
-        <SiNextdotjs />
+        <div className="flex justify-center w-full items-center">
+          <SiNextdotjs />
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons flex justify-center">
-        <DiGit />
+        <div className="flex justify-center w-full items-center">
+          <DiGit />
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons flex justify-center">
-        <SiFirebase />
+        <div className="flex justify-center w-full items-center">
+          <SiFirebase />
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons flex justify-center">
-        <SiRedis />
+        <div className="flex justify-center w-full items-center">
+          <SiRedis />
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons flex justify-center">
-        <SiPostgresql />
+        <div className="flex justify-center w-full items-center">
+          <SiPostgresql />
+        </div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <div className="flex justify-center w-full items-center">
+          <DiPython />
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons flex justify-center">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons flex justify-center">
-        <DiJava />
+        <div className="flex justify-center w-full items-center">
+          <DiJava />
+        </div>
       </Col>
     </Row>
   );
