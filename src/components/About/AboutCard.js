@@ -10,10 +10,10 @@ function AboutCard() {
           <p className="capitalize" style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">AR Akash </span>
             from <span className="purple"> DHAKA, BANGLADESH.</span>
+            {/* <br /> */}
+            {/* I am currently employed as a software developer at Juspay. */}
             <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I ave completed Frontend Web Development With REACT at Creative
+            I have completed Frontend Web Development With REACT at Creative
             It.
             <br />
             <br />
