@@ -37,7 +37,7 @@ export const Technology = () => {
                             <div className="absolute right-3 top-3 border-2 dark:border-[#ffffff1f] rounded-3xl w-12 h-7 center">
                                 <p className='font-normal text-xs leading-[170%] text-[#0c0c0c] dark:text-[#eaeaea]'>90%</p>
                             </div>
-                            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 dark:bg-[#ffffff1f] w-[90%] lg:w-[335px] h-1 rounded">
+                            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 dark:bg-[#ffffff1f] w-[90%] xl:w-[335px] h-1 rounded">
                                 <div className="progress h-full w-[90%] bg-[#78cc6d] rounded"></div>
                             </div>
                         </div>
@@ -48,7 +48,7 @@ export const Technology = () => {
                             <div className="absolute right-3 top-3 border-2 dark:border-[#ffffff1f] rounded-3xl w-12 h-7 center">
                                 <p className='font-normal text-xs leading-[170%] text-[#0c0c0c] dark:text-[#eaeaea]'>90%</p>
                             </div>
-                            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 dark:bg-[#ffffff1f] w-[90%] lg:w-[335px] h-1 rounded">
+                            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 dark:bg-[#ffffff1f] w-[90%] xl:w-[335px] h-1 rounded">
                                 <div className="progress h-full w-[90%] bg-[#78cc6d] rounded"></div>
                             </div>
                         </div>
@@ -60,7 +60,7 @@ export const Technology = () => {
                             <div className="absolute right-3 top-3 border-2 dark:border-[#ffffff1f] rounded-3xl w-12 h-7 center">
                                 <p className='font-normal text-xs leading-[170%] text-[#0c0c0c] dark:text-[#eaeaea]'>90%</p>
                             </div>
-                            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 dark:bg-[#ffffff1f] w-[90%] lg:w-[335px] h-1 rounded">
+                            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 dark:bg-[#ffffff1f] w-[90%] xl:w-[335px] h-1 rounded">
                                 <div className="progress h-full w-[90%] bg-[#78cc6d] rounded"></div>
                             </div>
                         </div>
@@ -71,7 +71,7 @@ export const Technology = () => {
                             <div className="absolute right-3 top-3 border-2 dark:border-[#ffffff1f] rounded-3xl w-12 h-7 center">
                                 <p className='font-normal text-xs leading-[170%] text-[#0c0c0c] dark:text-[#eaeaea]'>90%</p>
                             </div>
-                            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 dark:bg-[#ffffff1f] w-[90%] lg:w-[335px] h-1 rounded">
+                            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 dark:bg-[#ffffff1f] w-[90%] xl:w-[335px] h-1 rounded">
                                 <div className="progress h-full w-[90%] bg-[#78cc6d] rounded"></div>
                             </div>
                         </div>
