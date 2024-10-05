@@ -1,6 +1,6 @@
 "use client"
 import { useContext } from 'react'
-import { Contex } from '../../../contex/DarkContext'
+import { Contex } from '../../contex/DarkContext'
 
 export const NewTechnology = () => {
     let { dark } = useContext(Contex)

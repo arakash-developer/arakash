@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Container from "./component/layers/layers/Container";
-import Navbar from "./component/layers/layers/Navbar";
-import Profile from "./component/layers/layers/Profile";
-import Check from "./component/layers/layers/Check";
+import Container from "./component/layers/Container";
+import Navbar from "./component/layers/Navbar";
+import Profile from "./component/layers/Profile";
+import Check from "./component/layers/Check";
 import Home from "./component/pages/Home";
 
 export default function Root() {

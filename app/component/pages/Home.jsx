@@ -1,11 +1,11 @@
 "use client"
 import { useContext } from 'react'
 import { Contex } from '../../contex/DarkContext'
-import { Technology } from '../layers/layers/Technology'
-import { Toolstack } from '../layers/layers/Toolstack'
-import { NewTechnology } from '../layers/layers/NewTechnology '
+import { Technology } from '../layers/Technology'
+import { Toolstack } from '../layers/Toolstack'
+import { NewTechnology } from '../layers/NewTechnology '
 import Link from 'next/link'
-import About from '../layers/layers/About'
+import About from '../layers/About'
 
 const Home = () => {
     let { dark } = useContext(Contex)

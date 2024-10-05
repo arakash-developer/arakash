@@ -1,8 +1,8 @@
 "use client"
-import Image from 'next/image'
-import Akash from '../../../../public/akash.png'
-import { Contex } from '../../../contex/DarkContext'
 import { useContext } from 'react'
+import Image from 'next/image'
+import Akash from '../../../public/akash.png'
+import { Contex } from '../../contex/DarkContext'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'

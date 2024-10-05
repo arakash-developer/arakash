@@ -2,16 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import { faCode } from '@fortawesome/free-solid-svg-icons'
-import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import { faNewspaper } from '@fortawesome/free-solid-svg-icons'
-import { faUserPen } from '@fortawesome/free-solid-svg-icons'
-import { faSun } from '@fortawesome/free-regular-svg-icons'
-import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
-import Js from '../../../../public/icon/js.svg'
-import Reacti from '../../../../public/icon/react.svg'
-import Next from '../../../../public/icon/next.svg'
-import Redux from '../../../../public/icon/redux.svg'
+
 import Image from 'next/image'
 import { SiNextdotjs } from "react-icons/si";
 import { FaReact } from "react-icons/fa";

@@ -12,7 +12,7 @@ import { faNewspaper } from '@fortawesome/free-solid-svg-icons'
 import { faUserPen } from '@fortawesome/free-solid-svg-icons'
 import { faSun } from '@fortawesome/free-regular-svg-icons'
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
-import { Contex } from '../../../contex/DarkContext'
+import { Contex } from '../../contex/DarkContext'
 
 
 const Navbar = () => {
