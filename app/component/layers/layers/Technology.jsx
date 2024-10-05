@@ -20,9 +20,9 @@ import { IoLogoNodejs } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
 
 
-export const Technology = ({ dark }) => {
+export const Technology = () => {
     return (
-        <div id='skills' className={`${dark ? "dark" : null}`}>
+        <div id='skills'>
             <div className='mt-4 py-75px dark:bg-[#0c0c0c] bg-[#fff]'>
                 <div className="content px-2 md:px-3 lg:pl-[25px] py-[90px]">
                     <p className='dark:text-[#fff] text-[#0c0c0c] border-2 dark:border-[#ffffff1f] rounded-full inline-flex py-2 px-5 items-center gap-2'>
