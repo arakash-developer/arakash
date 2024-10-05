@@ -18,18 +18,8 @@ import { FaReact } from "react-icons/fa";
 import { TbBrandRedux } from "react-icons/tb";
 import { IoLogoNodejs } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
-import SkillBar from 'react-skillbars';
 
-const skills = [
-    { type: 'Java', level: 100},
-  ];
- let colors = {
-    bar: 'red',
-    title: {
-      text: 'transparent',
-      background: 'transparent',
-    },
-  };
+
 export const Technology = ({ dark }) => {
     return (
         <div id='skills' className={`${dark ? "dark" : null}`}>
@@ -48,7 +38,7 @@ export const Technology = ({ dark }) => {
                                 <p className='font-normal text-xs leading-[170%] text-[#0c0c0c] dark:text-[#eaeaea]'>90%</p>
                             </div>
                             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 dark:bg-[#ffffff1f] w-[335px] h-1 rounded">
-                                <SkillBar skills={skills} colors={colors} animationDuration={7000}/>
+                            <div className="progress h-full w-[90%] bg-[#78cc6d] rounded"></div>
                             </div>
                         </div>
 
