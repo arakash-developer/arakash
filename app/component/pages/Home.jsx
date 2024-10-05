@@ -6,6 +6,7 @@ import { Toolstack } from '../layers/Toolstack'
 import { NewTechnology } from '../layers/NewTechnology '
 import Link from 'next/link'
 import About from '../layers/About'
+import Video from '../layers/Video'
 
 const Home = () => {
     let { dark } = useContext(Contex)
@@ -13,6 +14,7 @@ const Home = () => {
         <div className={`w-full ${dark ? "dark" : null} lg:h-[100vh] lg:overflow-scroll no-scrollbar cursor-pointer rounded-tr-3xl`}>
             <About />
             <Technology />
+            <Video />
         </div>
     )
 }
