@@ -4,6 +4,7 @@ import Navbar from "./component/layers/layers/Navbar";
 import Profile from "./component/layers/layers/Profile";
 import Check from "./component/layers/layers/Check";
 import Bannar from "./component/layers/layers/Bannar";
+import Home from "./component/pages/Home";
 
 export default function Home() {
   
@@ -15,7 +16,8 @@ export default function Home() {
             <Navbar />
           <div className="flex flex-col lg:flex-row gap-3 h-[100vh] overflow-scroll no-scrollbar">
             <Profile />
-            <Bannar />
+            {/* <Bannar /> */}
+            <Home />
           </div>
           </div>
         </Container>
