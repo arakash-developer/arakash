@@ -1,11 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
-import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import { faCode } from '@fortawesome/free-solid-svg-icons'
-
-import Image from 'next/image'
 import { SiNextdotjs } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
 import { TbBrandRedux } from "react-icons/tb";
 import { IoLogoNodejs } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
@@ -18,7 +13,7 @@ export const Technology = () => {
         <div id='skills' className=''>
             <div className='mt-4 py-75px dark:bg-[#0c0c0c] bg-[#fff] side'>
                 <div className="content py-[90px]">
-                    <p className='dark:text-[#fff] text-[#0c0c0c] border-2 dark:border-[#ffffff1f] rounded-full inline-flex py-2 px-5 items-center gap-2'>
+                    <p className='dark:text-[#fff] text-[#0c0c0c] uppercase border-2 dark:border-[#ffffff1f] rounded-full inline-flex py-2 px-5 items-center gap-2'>
                         <FontAwesomeIcon className='h-3 dark:text-[#fff] group-hover:text-[#78cc6d] text-[#0c0c0c]' icon={faCode} />
                         Technical Skills
                     </p>

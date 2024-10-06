@@ -38,6 +38,12 @@ const Navbar = () => {
                         about
                     </div>
                 </Link>
+                <Link className='w-full py-5 inline-flex justify-center relative group' href="#projects">
+                    <FontAwesomeIcon className='h-4 dark:text-[#fff] text-[#0c0c0c] group-hover:text-[#78cc6d]' icon={faBriefcase} />
+                    <div className="absolute left-[65%] transition-all duration-300 ease-linear top-1/2 -translate-y-1/2 text-xs text-[#0C0C0C] uppercase py-1 px-3 font-medium bg-[#78cc6d] rounded-full opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:left-[75%]">
+                        projects
+                    </div>
+                </Link>
                 <Link className='w-full py-5 inline-flex justify-center relative group' href="#skills">
                     <FontAwesomeIcon className='h-4 dark:text-[#fff] text-[#0c0c0c] group-hover:text-[#78cc6d]' icon={faCode} />
                     <div className="absolute left-[65%] transition-all duration-300 ease-linear top-1/2 -translate-y-1/2 text-xs text-[#0C0C0C] uppercase py-1 px-3 font-medium bg-[#78cc6d] rounded-full opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:left-[75%]">
@@ -48,12 +54,6 @@ const Navbar = () => {
                     <FontAwesomeIcon className='h-4 dark:text-[#fff] text-[#0c0c0c] group-hover:text-[#78cc6d]' icon={faScrewdriverWrench} />
                     <div className="absolute left-[65%] transition-all duration-300 ease-linear top-1/2 -translate-y-1/2 text-xs text-[#0C0C0C] uppercase py-1 px-3 font-medium bg-[#78cc6d] rounded-full opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:left-[75%]">
                         services
-                    </div>
-                </Link>
-                <Link className='w-full py-5 inline-flex justify-center relative group' href="projects">
-                    <FontAwesomeIcon className='h-4 dark:text-[#fff] text-[#0c0c0c] group-hover:text-[#78cc6d]' icon={faBriefcase} />
-                    <div className="absolute left-[65%] transition-all duration-300 ease-linear top-1/2 -translate-y-1/2 text-xs text-[#0C0C0C] uppercase py-1 px-3 font-medium bg-[#78cc6d] rounded-full opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:left-[75%]">
-                        projects
                     </div>
                 </Link>
                 <Link className='w-full py-5 inline-flex justify-center relative group' href="resume">
