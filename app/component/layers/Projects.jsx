@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import ProjectCard from './ProjectCard'
 import Project1 from '../../../public/project1.png'
 
@@ -9,7 +9,7 @@ const Projects = () => {
     <div id='projects' className=''>
       <div className='mt-4 py-[75px] dark:bg-[#0c0c0c] bg-[#fff] side'>
         <p className='dark:text-[#fff] uppercase text-[#0c0c0c] border-2 dark:border-[#ffffff1f] rounded-full inline-flex py-2 px-5 items-center gap-2'>
-          <FontAwesomeIcon className='h-3 dark:text-[#fff] group-hover:text-[#78cc6d] text-[#0c0c0c]' icon={faCode} />
+          <FontAwesomeIcon className='h-4 dark:text-[#fff] group-hover:text-[#78cc6d] text-[#0c0c0c]' icon={faBriefcase} />
           Projects
         </p>
         <h2 className='mt-3 mb-[45px] dark:text-[#fff] text-[#0c0c0c] font-medium text-[2.38rem] leading-[130%]'>Explore Portfolio By Technology</h2>

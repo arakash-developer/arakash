@@ -8,13 +8,13 @@ import { Toolstack } from './Toolstack'
 import General from './General'
 
 
-export const Technology = () => {
+const Technology = () => {
     return (
         <div id='skills' className=''>
             <div className='mt-4 py-75px dark:bg-[#0c0c0c] bg-[#fff] side'>
                 <div className="content py-[90px]">
                     <p className='dark:text-[#fff] text-[#0c0c0c] uppercase border-2 dark:border-[#ffffff1f] rounded-full inline-flex py-2 px-5 items-center gap-2'>
-                        <FontAwesomeIcon className='h-3 dark:text-[#fff] group-hover:text-[#78cc6d] text-[#0c0c0c]' icon={faCode} />
+                        <FontAwesomeIcon className='h-4 dark:text-[#fff] group-hover:text-[#78cc6d] text-[#0c0c0c]' icon={faCode} />
                         Technical Skills
                     </p>
                     <h2 className='mt-3 mb-[45px] dark:text-[#fff] text-[#0c0c0c] font-medium text-[2.38rem] leading-[130%]'>Technologies</h2>
@@ -71,4 +71,7 @@ export const Technology = () => {
             </div>
         </div>
     )
-}
+};
+
+
+export default Technology;

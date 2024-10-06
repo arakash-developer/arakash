@@ -1,13 +1,10 @@
 "use client"
-import { useContext } from 'react'
+import React,{ useContext } from 'react'
 import { Contex } from '../../contex/DarkContext'
-import { Technology } from '../layers/Technology'
-import { Toolstack } from '../layers/Toolstack'
-import { NewTechnology } from '../layers/NewTechnology '
-import Link from 'next/link'
+import Technology from '../layers/Technology'
 import About from '../layers/About'
-import Video from '../layers/Video'
 import Projects from '../layers/Projects'
+import Contact from '../layers/Contact'
 
 const Home = () => {
     let { dark } = useContext(Contex)
@@ -16,8 +13,9 @@ const Home = () => {
             <About />
             <Projects />
             <Technology />
+            <Contact />
         </div>
     )
-}
+};
 
 export default Home;
