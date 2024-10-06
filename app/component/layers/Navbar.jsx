@@ -1,6 +1,5 @@
 "use client"
-import { useState,useContext} from "react"
-import Image from 'next/image'
+import { useContext} from "react"
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'

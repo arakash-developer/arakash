@@ -1,10 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode } from '@fortawesome/free-solid-svg-icons'
-import Image from 'next/image'
-import { SiNextdotjs } from "react-icons/si";
-import { TbBrandRedux } from "react-icons/tb";
-import { IoLogoNodejs } from "react-icons/io5";
-import { RiReactjsLine } from "react-icons/ri";
 import Toolcard from './Toolcard';
 import Vs from '../../../public/icon/vs.png'
 import Chat from '../../../public/icon/chat.png'

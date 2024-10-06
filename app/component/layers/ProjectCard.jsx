@@ -1,15 +1,16 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
-const ProjectCard = ({img,title,subtitle,go}) => {
+const ProjectCard = ({ img, title, subtitle, go }) => {
     return (
-        <div className="rounded-2xl w-96 bg-[#ffffff1f] border-2 dark:border-[#ffffff1f]">
-            <div className="m-3 rounded-xl w-[352px] h-72 overflow-hidden">
-                <Image className='w-full h-full object-cover' src={img} alt='project1' />
+        <div className="rounded-2xl w-full xl:w-96 bg-[#ffffff1f] border-2 dark:border-[#ffffff1f]">
+            <div className="m-3">
+                <div className=" w-full xl:w-[352px] h-72 overflow-hidden rounded-xl">
+                    <Image className='w-full h-full object-cover' src={img} alt='project1' />
+                </div>
             </div>
             <div className="mt-[18px] mb-[30px] mx-5 flex justify-between items-end">
                 <div>

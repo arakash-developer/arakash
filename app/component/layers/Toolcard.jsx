@@ -1,5 +1,4 @@
 import React from 'react'
-import Vs from '../../../public/icon/vs.png'
 import Image from 'next/image'
 
 const Toolcard = ({img,percen,title}) => {
