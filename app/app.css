@@ -1,9 +1,12 @@
 *{
-    @apply font-poppins transition-colors duration-200 box-border
+    @apply font-poppins transition-colors duration-200 box-border;
 }
 .center{
     @apply flex justify-center items-center;
 }
 img,svg{
-    @apply max-w-full
+    @apply max-w-full;
+}
+.side{
+    @apply px-2 md:px-3 lg:pl-[25px];
 }

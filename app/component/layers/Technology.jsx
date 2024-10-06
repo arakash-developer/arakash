@@ -9,13 +9,15 @@ import { FaReact } from "react-icons/fa";
 import { TbBrandRedux } from "react-icons/tb";
 import { IoLogoNodejs } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
+import { Toolstack } from './Toolstack'
+import General from './General'
 
 
 export const Technology = () => {
     return (
-        <div id='skills'>
-            <div className='mt-4 py-75px dark:bg-[#0c0c0c] bg-[#fff]'>
-                <div className="content px-2 md:px-3 lg:pl-[25px] py-[90px]">
+        <div id='skills' className=''>
+            <div className='mt-4 py-75px dark:bg-[#0c0c0c] bg-[#fff] side'>
+                <div className="content py-[90px]">
                     <p className='dark:text-[#fff] text-[#0c0c0c] border-2 dark:border-[#ffffff1f] rounded-full inline-flex py-2 px-5 items-center gap-2'>
                         <FontAwesomeIcon className='h-3 dark:text-[#fff] group-hover:text-[#78cc6d] text-[#0c0c0c]' icon={faCode} />
                         Technical Skills
@@ -68,6 +70,9 @@ export const Technology = () => {
                         </div>
                     </div>
                 </div>
+
+                <Toolstack />
+                <General />
             </div>
         </div>
     )

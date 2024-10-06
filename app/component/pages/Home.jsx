@@ -14,7 +14,6 @@ const Home = () => {
         <div className={`w-full ${dark ? "dark" : null} lg:h-[100vh] lg:overflow-scroll no-scrollbar cursor-pointer rounded-tr-3xl`}>
             <About />
             <Technology />
-            <Video />
         </div>
     )
 }
