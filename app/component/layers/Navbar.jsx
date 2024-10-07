@@ -55,19 +55,19 @@ const Navbar = () => {
                         services
                     </div>
                 </Link>
-                <Link className='w-full py-5 inline-flex justify-center relative group' href="resume">
+                <Link className='w-full py-5 inline-flex justify-center relative group' href="#resume">
                     <FontAwesomeIcon className='h-4 dark:text-[#fff] text-[#0c0c0c] group-hover:text-[#78cc6d]' icon={faFilePdf} />
                     <div className="absolute left-[65%] transition-all duration-300 ease-linear top-1/2 -translate-y-1/2 text-xs text-[#0C0C0C] uppercase py-1 px-3 font-medium bg-[#78cc6d] rounded-full opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:left-[75%]">
                         resume
                     </div>
                 </Link>
-                <Link className='w-full py-5 inline-flex justify-center relative group' href="articles">
+                <Link className='w-full py-5 inline-flex justify-center relative group' href="#articles">
                     <FontAwesomeIcon className='h-4 dark:text-[#fff] text-[#0c0c0c] group-hover:text-[#78cc6d]' icon={faNewspaper} />
                     <div className="absolute left-[65%] transition-all duration-300 ease-linear top-1/2 -translate-y-1/2 text-xs text-[#0C0C0C] uppercase py-1 px-3 font-medium bg-[#78cc6d] rounded-full opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:left-[75%]">
                         articles
                     </div>
                 </Link>
-                <Link className='w-full py-5 inline-flex justify-center relative group' href="contact">
+                <Link className='w-full py-5 inline-flex justify-center relative group' href="#contact">
                     <FontAwesomeIcon className='h-4 dark:text-[#fff] text-[#0c0c0c] group-hover:text-[#78cc6d]' icon={faPaperPlane} />
                     <div className="absolute left-[65%] transition-all duration-300 ease-linear top-1/2 -translate-y-1/2 text-xs text-[#0C0C0C] uppercase py-1 px-3 font-medium bg-[#78cc6d] rounded-full opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:left-[75%]">
                         contact
