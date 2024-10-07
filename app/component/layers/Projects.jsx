@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import ProjectCard from './ProjectCard'
 import Project1 from '../../../public/project1.png'
+import Orebi from '../../../public/orebi.jpg'
+import Somru from '../../../public/somru.jpg'
 
 const Projects = () => {
   return (
@@ -21,8 +23,8 @@ const Projects = () => {
           <h4 className='uppercase font-normal text-sm leading-[233%] dark:text-[#ffffffe6] py-1 px-4 bg-[#00000010] dark:bg-[#ffffff1f] dark:hover:bg-[#78cc6d] dark:hover:text-[#323232] hover:bg-[#78cc6d] hover:text-[#323232] transition-all duration-300 ease-linear  rounded-3xl inline-block'>Mern</h4>
       </div>
       <div className="gallery grid grid-cols-1 xl:grid-cols-2 gap-[30px]">
-        <ProjectCard img={Project1} title='The App Market on Google Play' subtitle='React' go=''/>
-        <ProjectCard img={Project1} title='The App Market on Google Play' subtitle='React' go=''/>
+        <ProjectCard img={Orebi} title='Orebi | Ecomarce Web Templete' subtitle='Next' go='https://orebi4.vercel.app/'/>
+        <ProjectCard img={Somru} title='Somru is an BioScience Company' subtitle='Basic' go='https://akash100a.github.io/somru/'/>
         <ProjectCard img={Project1} title='The App Market on Google Play' subtitle='React' go=''/>
         <ProjectCard img={Project1} title='The App Market on Google Play' subtitle='React' go=''/>
         <ProjectCard img={Project1} title='The App Market on Google Play' subtitle='React' go=''/>

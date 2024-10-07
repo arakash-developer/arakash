@@ -13,13 +13,13 @@ const General = () => {
                 Tool Skills
             </p>
             <div className="flex gap-[30px] flex-wrap">
-            <GenCard percen='90' title='ChatGpt'/>
-            <GenCard percen='90' title='ChatGpt'/>
-            <GenCard percen='90' title='ChatGpt'/>
-            <GenCard percen='90' title='ChatGpt'/>
-            <GenCard percen='90' title='ChatGpt'/>
-            <GenCard percen='90' title='ChatGpt'/>
-            <GenCard percen='90' title='ChatGpt'/>
+            <GenCard percen='100' title='Html'/>
+            <GenCard percen='100' title='Css'/>
+            <GenCard percen='100' title='Bootstrap'/>
+            <GenCard percen='90' title='Js'/>
+            <GenCard percen='70' title='Jquery'/>
+            <GenCard percen='90' title='Gsap'/>
+            <GenCard percen='90' title='Tailwind'/>
             <GenCard percen='90' title='ChatGpt'/>
             </div>
         </div>

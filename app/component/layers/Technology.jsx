@@ -66,8 +66,8 @@ const Technology = () => {
                     </div>
                 </div>
 
-                <Toolstack />
                 <General />
+                <Toolstack />
             </div>
         </div>
     )
