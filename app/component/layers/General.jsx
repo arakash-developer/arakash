@@ -12,7 +12,7 @@ const General = () => {
                 <FontAwesomeIcon className='h-3 dark:text-[#fff] group-hover:text-[#78cc6d] text-[#0c0c0c]' icon={faCode} />
                 Tool Skills
             </p>
-            <div className="flex gap-[30px] flex-wrap">
+            <div className="flex gap-[30px] xl:gap-[20px] flex-wrap justify-evenly">
             <GenCard percen='100' title='Html'/>
             <GenCard percen='100' title='Css'/>
             <GenCard percen='100' title='Bootstrap'/>

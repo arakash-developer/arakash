@@ -17,7 +17,7 @@ export const Toolstack = ({dark}) => {
                         Tool Skills
                     </p>
                     <h2 className='mt-3 mb-[66px] dark:text-[#fff] text-[#0c0c0c] font-medium text-[2.38rem] leading-[130%]'>Tool Stack</h2>
-                    <div className="flex gap-[30px] items-center flex-wrap">
+                    <div className="flex xl:gap-[20px] gap-[30px] items-center justify-evenly flex-wrap">
                       <Toolcard title='VsCode' img={Vs} percen="90"/>
                       <Toolcard title='Github' img={Github} percen="90"/>
                       <Toolcard title='Figma' img={Figma} percen="95"/>
