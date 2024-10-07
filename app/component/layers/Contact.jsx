@@ -16,8 +16,8 @@ const Contact = () => {
             </p>
             <h2 className='mt-3 mb-[45px] dark:text-[#fff] text-[#0c0c0c] font-medium text-[2.38rem] leading-[130%]'>Let's Get in Touch!</h2>
             <div className="mt-[45px] mb-[90px]">
-                <div className="flex justify-between items-center">
-                    <div className="flex items-center justify-between bg-[#ffffff11] border-2 dark:border-[#ffffff1f] rounded-2xl w-96 h-24 px-5">
+                <div className="flex justify-between items-center flex-col md:flex-row gap-8">
+                    <div className="flex items-center justify-between bg-[#ffffff11] border-2 dark:border-[#ffffff1f] rounded-2xl w-full md:w-96 h-24 px-5">
                         <div className="flex items-center">
                             <Image src={Phone} alt="" />
                             <h4 className='pl-5 font-normal text-[1.06rem] leading-[170%] text-[#0c0c0c] dark:text-[#eaeaea] opacity-70'>Phone</h4>
@@ -26,7 +26,7 @@ const Contact = () => {
                             <h3 className='font-normal text-base leading-[170%] uppercase text-[#0c0c0c] dark:text-[#eaeaea]'>+880 19902463303</h3>
                         </div>
                     </div>
-                    <div className="flex items-center justify-between bg-[#ffffff11] border-2 dark:border-[#ffffff1f] rounded-2xl w-96 h-24 px-5">
+                    <div className="flex items-center justify-between bg-[#ffffff11] border-2 dark:border-[#ffffff1f] rounded-2xl w-full md:w-96 h-24 px-5">
                         <div>
                             <Image src={Mail} alt="" />
                         </div>
