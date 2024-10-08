@@ -46,7 +46,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className="map mb-[90px] w-[780px] h-[450px]">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.8776111855225!2d90.38719611156844!3d23.756106697395374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8a426199b0d%3A0x6a2c655d06c88ec9!2sFarmgate%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1728291119158!5m2!1sen!2sbd" className='w-full h-full' style={{ border: "0", allowfullscreen: "", loading: "lazy" }} referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.8776111855225!2d90.38719611156844!3d23.756106697395374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8a426199b0d%3A0x6a2c655d06c88ec9!2sFarmgate%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1728291119158!5m2!1sen!2sbd" className='w-full h-full' style={{ border: "0", allowfullscreen: "", loading: "lazy" }} referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div className="contactform"></div>
         </div>
