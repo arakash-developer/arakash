@@ -53,13 +53,13 @@ const Contact = () => {
             <div className="contactform">
                 <h2 className='mb-[46px] font-medium text-[2.38rem] leading-[130%] dark:text-[#fff] text-[#0c0c0c]'>Let's make your project brilliant!</h2>
                 <form action="">
-                    <div className="flex items-center gap-8">
-                        <input className='py-2 px-4 font-normal outline-none bg-transparent border dark:border-[#ffffff1f] text-base dark:text-[#999] text-[#0c0c0c] rounded-xl w-[374px] h-[50px]' type="text" name="" id="" placeholder='Full Name' />
-                        <input className='py-2 px-4 font-normal outline-none bg-transparent border dark:border-[#ffffff1f] text-base dark:text-[#999] text-[#0c0c0c] rounded-xl w-96 h-12' type="email" name="" id="" placeholder='Email' />
+                    <div className="flex items-center gap-8 flex-col lg:flex-row">
+                        <input className='py-2 px-4 font-normal outline-none bg-transparent border dark:border-[#ffffff1f] text-base dark:text-[#999] text-[#0c0c0c] rounded-xl w-full xl:w-[374px] h-[50px]' type="text" name="" id="" placeholder='Full Name' />
+                        <input className='py-2 px-4 font-normal outline-none bg-transparent border dark:border-[#ffffff1f] text-base dark:text-[#999] text-[#0c0c0c] rounded-xl w-full xl:w-[374px] h-[50px]' type="email" name="" id="" placeholder='Email' />
                     </div>
-                    <textarea className='mt-8 rounded-xl w-[48.69rem] h-[120px] py-2 px-4 outline-none bg-transparent border dark:border-[#ffffff1f] dark:text-[#999] text-[#0c0c0c]' name="" id=""></textarea>
+                    <textarea className='mt-8 rounded-xl w-full lg:w-[48.69rem] h-[120px] py-2 px-4 outline-none bg-transparent border dark:border-[#ffffff1f] dark:text-[#999] text-[#0c0c0c]' name="" id=""></textarea>
 
-                    <Link className='pb-10 flex gap-2 items-baseline justify-start font-semibold text-sm uppercase text-center text-white/[0.9] mt-8' href='#'>Send Message <Image src={Send2} /></Link>
+                    <Link className='pb-10 flex gap-2 items-baseline justify-start font-semibold text-sm uppercase text-center text-[#0c0c0c] dark:text-white/[0.9] mt-8' href='#'>Send Message <Image src={Send2} /></Link>
                 </form>
             </div>
         </div>
