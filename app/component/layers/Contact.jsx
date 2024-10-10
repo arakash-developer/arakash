@@ -62,6 +62,7 @@ const Contact = () => {
                     <Link className='pb-10 flex gap-2 items-baseline justify-start font-semibold text-sm uppercase text-center text-[#0c0c0c] dark:text-white/[0.9] mt-8' href='#'>Send Message <Image src={Send2} /></Link>
                 </form>
             </div>
+            <p>console.log("esaedfvdavcdsa535235");</p>
         </div>
     )
 }
