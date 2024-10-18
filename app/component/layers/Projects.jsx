@@ -1,5 +1,4 @@
-"use client"
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import ProjectCard from './ProjectCard'
@@ -7,15 +6,14 @@ import ProjectData from '../../helper/ProjectData'
 
 const Projects = () => {
   let [currentData, setCurrentData] = useState(ProjectData)
-  let categoryItem = ["all", ...new Set(ProjectData.map((item) => (item.subtitle)))];
-  let projectClick = (subtitle) => {
-    if (subtitle === "all") {
-      setCurrentData(ProjectData)
-    }else{
-      let filterData = ProjectData.filter((item) => (item.subtitle === subtitle));
-      setCurrentData(filterData)
+  let categoryItem = ["all", ...new Set(ProjectData.map((item) => (item.subtitle)))]
+    let projectClick = (subtitle) => {
+      if (subtitle === "all") {
+        setCurrentData(ProjectData)
+      }
+        let filterData = ProjectData.filter((item) => (item.subtitle === subtitle))
+        setCurrentData(filterData)
     }
-  }
   return (
     <div id='projects' className='projects'>
       <div className='mt-4 py-[75px] dark:bg-[#0c0c0c] bg-[#fff] side'>
