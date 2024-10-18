@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
@@ -8,10 +9,11 @@ const Projects = () => {
   let [currentData, setCurrentData] = useState(ProjectData)
   let categoryItem = ["all", ...new Set(ProjectData.map((item) => (item.subtitle)))];
   let projectClick = (subtitle) => {
-    let filterData = ProjectData.filter((item) => (item.subtitle === subtitle));
-    setCurrentData(filterData)
     if (subtitle === "all") {
       setCurrentData(ProjectData)
+    }else{
+      let filterData = ProjectData.filter((item) => (item.subtitle === subtitle));
+      setCurrentData(filterData)
     }
   }
   return (
