@@ -10,9 +10,11 @@ const Projects = () => {
     let projectClick = (subtitle) => {
       if (subtitle === "all") {
         setCurrentData(ProjectData)
-      }
+      }else
+      {
         let filterData = ProjectData.filter((item) => (item.subtitle === subtitle))
         setCurrentData(filterData)
+      }
     }
   return (
     <div id='projects' className='projects'>
@@ -33,8 +35,8 @@ const Projects = () => {
         </div>
         <div className="gallery grid grid-cols-1 xl:grid-cols-2 gap-[30px]">
           {
-            currentData.map((item) => (
-              <ProjectCard key={item.id} img={item.image} title={item.title} subtitle={item.subtitle} go={item.go} />
+            currentData.map((item,index) => (
+              <ProjectCard key={index} img={item.image} title={item.title} subtitle={item.subtitle} go={item.go} />
             ))
 
           }
