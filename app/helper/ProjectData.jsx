@@ -33,6 +33,20 @@ const ProjectData = [
         image:"/projects/somru.jpg",
         subtitle:"basic",
         go:"https://akash100a.github.io/somru/",
-    }
+    },
+    {
+        id:4,
+        title:"The App Market on Google Play",
+        image:"/projects/project1.png",
+        subtitle:"mern",
+        go:"",
+    },
+    {
+        id:4,
+        title:"The App Market on Google Play",
+        image:"/projects/project1.png",
+        subtitle:"mern",
+        go:"",
+    },
 ]
 export default ProjectData;
