@@ -21,7 +21,7 @@ const Contact = () => {
                 <div className="flex justify-between items-center flex-col md:flex-row gap-8">
                     <div className="flex items-center justify-between bg-[#ffffff11] border-2 dark:border-[#ffffff1f] rounded-2xl w-full md:w-96 xl:w-[420px] h-24 px-5">
                         <div className="flex items-center">
-                            <Image src={Phone} alt="" />
+                            <Image src={Phone} alt="Phone" />
                             <h4 className='pl-5 font-normal text-[1.06rem] leading-[170%] text-[#0c0c0c] dark:text-[#eaeaea] opacity-70'>Phone</h4>
                         </div>
                         <div className="">

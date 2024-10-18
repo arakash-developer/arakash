@@ -10,3 +10,9 @@ img,svg{
 .side{
     @apply px-2 md:px-3 lg:pl-[25px];
 }
+.projects .active{
+    @apply !bg-[#78cc6d] text-[#323232]
+}
+.projects .remove{
+    @apply !bg-[#cd0c0c] text-[#323232]
+}

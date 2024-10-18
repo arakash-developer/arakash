@@ -9,7 +9,7 @@ const ProjectCard = ({ img, title, subtitle, go }) => {
         <div className="rounded-2xl w-full xl:w-96 bg-[#ffffff1f] border-2 dark:border-[#ffffff1f]">
             <div className="m-3">
                 <div className=" w-full xl:w-[352px] h-72 overflow-hidden rounded-xl">
-                    <Image className='w-full h-full object-cover' src={img} alt='project1' />
+                    <Image className='w-full h-full object-cover' src={img} width='352' height='288'  alt='project1' />
                 </div>
             </div>
             <div className="mt-[18px] mb-[30px] mx-5 flex justify-between items-end">

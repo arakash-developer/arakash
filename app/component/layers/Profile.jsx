@@ -17,7 +17,7 @@ const Profile = () => {
             <div className="dark:bg-[#0c0c0c] bg-[#fff] rounded-b-3xl rounded-tl-3xl text-[#0c0c0c] dark:text-[#fff]">
                 <div className='p-5 md:p-10'>
                     <div className="rounded-b-3xl rounded-tl-3xl lg:w-72 lg:h-72 bg-stone-200 overflow-hidden">
-                        <Image className='h-full w-full object-cover' src={Akash} alt='a' />
+                        <Image className='h-full w-full object-cover' src={Akash} alt='Akash' />
                     </div>
                     <div className="mt-[49px] mb-0">
                         <h3 className='font-normal text-sm leading-[170%] uppercase text-center text-[#78cc6d]'>next js developer</h3>
