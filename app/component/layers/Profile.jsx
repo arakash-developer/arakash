@@ -23,16 +23,16 @@ const Profile = () => {
                         <h3 className='font-normal text-sm leading-[170%] uppercase text-center text-[#78cc6d]'>next js developer</h3>
                         <h2 className="mt-2 font-semibold text-3xl leading-[107%] text-center dark:text-[#fff] text-[#0c0c0c]">AR AKASH</h2>
                         <div className="icon mt-5 flex gap-2 justify-center items-center">
-                            <Link target='_blank' href='https://www.linkedin.com/in/ar-akash-52644332b/' className='inline-block center rounded-2xl w-12 h-12 border-2 dark:border-[#ffffff1f]'>
+                            <Link target='_blank' href='https://www.linkedin.com/in/arakash-developer/' className='inline-block center rounded-2xl w-12 h-12 border-2 dark:border-[#ffffff1f]'>
                                 <FontAwesomeIcon className='dark:text-[#fff] text-[#0c0c0c]' icon={faLinkedin} />
                             </Link>
-                            <Link target='_blank' href='https://github.com/akash100a' className='inline-block center rounded-2xl w-12 h-12 border-2 dark:border-[#ffffff1f]'>
+                            <Link target='_blank' href='https://github.com/arakash-developer/' className='inline-block center rounded-2xl w-12 h-12 border-2 dark:border-[#ffffff1f]'>
                                 <FontAwesomeIcon className='dark:text-[#fff] text-[#0c0c0c]' icon={faGithub} />
                             </Link>
                             <Link target='_blank' href='https://www.facebook.com/arakash.developer/' className='inline-block center rounded-2xl w-12 h-12 border-2 dark:border-[#ffffff1f]'>
                                 <FontAwesomeIcon className='dark:text-[#fff] text-[#0c0c0c]' icon={faFacebook} />
                             </Link>
-                            <Link target='_blank' href='https://x.com/arakash100' className='inline-block center rounded-2xl w-12 h-12 border-2 dark:border-[#ffffff1f]'>
+                            <Link target='_blank' href='https://www.instagram.com/arakash.developer/' className='inline-block center rounded-2xl w-12 h-12 border-2 dark:border-[#ffffff1f]'>
                                 <FontAwesomeIcon className='dark:text-[#fff] text-[#0c0c0c]' icon={faTwitter} />
                             </Link>
                         </div>
