@@ -30,7 +30,7 @@ const Contact = () => {
                     </div>
                     <div className="flex items-center justify-between bg-[#ffffff11] border-2 dark:border-[#ffffff1f] rounded-2xl w-full md:w-96 xl:w-[420px] h-24 px-5">
                         <div>
-                            <Image src={Mail} alt="" />
+                            <Image src={Mail} alt="mail" />
                         </div>
                         <div className="">
                             <h3 className='font-normal text-base leading-[170%] lowercase text-[#0c0c0c] dark:text-[#eaeaea]'>arakash.developer@gmail.com</h3>
@@ -39,7 +39,7 @@ const Contact = () => {
                 </div>
                 <div className="mt-8 flex items-center justify-between px-5 bg-[#ffffff11] border-2 dark:border-[#ffffff1f] rounded-2xl w-full h-24">
                     <div className="flex items-center justify-between">
-                        <Image src={Address} alt="" />
+                        <Image src={Address} alt="Address" />
                         <h4 className='pl-5 font-normal text-[1.06rem] leading-[170%] text-[#0c0c0c] dark:text-[#eaeaea] opacity-70'>Address</h4>
                     </div>
                     <div className="">
@@ -59,7 +59,7 @@ const Contact = () => {
                     </div>
                     <textarea className='mt-8 rounded-xl w-full lg:w-[48.69rem] h-[120px] py-2 px-4 outline-none bg-transparent border dark:border-[#ffffff1f] dark:text-[#999] text-[#0c0c0c]' name="" id=""></textarea>
 
-                    <Link className='pb-10 flex gap-2 items-baseline justify-start font-semibold text-sm uppercase text-center text-[#0c0c0c] dark:text-white/[0.9] mt-8' href='#'>Send Message <Image src={Send2} /></Link>
+                    <Link className='pb-10 flex gap-2 items-baseline justify-start font-semibold text-sm uppercase text-center text-[#0c0c0c] dark:text-white/[0.9] mt-8' href='#'>Send Message <Image src={Send2} alt='send2' /></Link>
                 </form>
             </div>
             <p>console.log("esaedfvdavcdsa535235");</p>
