@@ -2,6 +2,8 @@
 import { useContext } from 'react'
 import Image from 'next/image'
 import Akash from '../../../public/akash.png'
+import Akash3 from '../../../public/akash3.jpg'
+import Akash4 from '../../../public/akash4.png'
 import { Contex } from '../../contex/DarkContext'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -17,7 +19,7 @@ const Profile = () => {
             <div className="dark:bg-[#0c0c0c] bg-[#fff] rounded-b-3xl rounded-tl-3xl text-[#0c0c0c] dark:text-[#fff]">
                 <div className='p-5 md:p-10'>
                     <div className="rounded-b-3xl rounded-tl-3xl lg:w-72 lg:h-72 bg-stone-200 overflow-hidden">
-                        <Image className='h-full w-full object-cover' src={Akash} alt='Akash' />
+                        <Image className='h-full w-full object-cover' src={Akash4} alt='Akash' />
                     </div>
                     <div className="mt-[49px] mb-0">
                         <h3 className='font-normal text-sm leading-[170%] uppercase text-center text-[#78cc6d]'>next js developer</h3>
