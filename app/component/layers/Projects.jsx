@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import ProjectCard from './ProjectCard'
-import ProjectData from '../../helper/ProjectData'
+import ProjectData from '@/helper/ProjectData'
 
 const Projects = () => {
   let [currentData, setCurrentData] = useState(ProjectData)
