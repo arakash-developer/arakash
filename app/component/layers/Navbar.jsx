@@ -1,5 +1,6 @@
 "use client"
 import { useContext } from "react"
+import { Contex } from '../../contex/DarkContext'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
@@ -11,7 +12,6 @@ import { faNewspaper } from '@fortawesome/free-solid-svg-icons'
 import { faUserPen } from '@fortawesome/free-solid-svg-icons'
 import { faSun } from '@fortawesome/free-regular-svg-icons'
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
-import { Contex } from '../../contex/DarkContext'
 
 const Navbar = () => {
     let IconData = [
@@ -52,13 +52,16 @@ const Navbar = () => {
         },
     ]
 
-    let { dark, setDark } = useContext(Contex)
+    let { dark, setDark,leftOpen,setLeftOpen} = useContext(Contex)
     let clickmanager = () => {
         setDark(!dark)
     }
+    let LeftHandeler = () => {
+        setLeftOpen(true)
+    }
     return (
         <div className={`w-[95px] flex flex-col gap-2 ${dark ? "dark" : null}`}>
-            <div className="bg-[#fff] dark:bg-[#0C0C0C] dark:text-[#fff] center rounded-3xl w-full h-10 sm:h-16 cursor-pointer group">
+            <div onClick={LeftHandeler} className="bg-[#fff] dark:bg-[#0C0C0C] dark:text-[#fff] center rounded-3xl w-full h-10 sm:h-16 cursor-pointer group">
                 <FontAwesomeIcon className='sm:h-[26px] sm:w-[26px] dark:text-[#fff] text-[#0c0c0c] group-hover:text-[#78cc6d] px-2 md:px-0' icon={faBarsStaggered} />
             </div>
             <Link href='#' onClick={clickmanager} className="dark:bg-[#0c0c0c] bg-[#fff] center rounded-3xl w-full sm:h-16 h-10 cursor-pointer group relative">
