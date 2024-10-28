@@ -20,9 +20,8 @@ const Contact = () => {
             <div className="mt-[45px] mb-[90px]">
                 <div className="flex justify-between items-center flex-col md:flex-row gap-8">
                     <div className="flex items-center justify-between bg-[#ffffff11] border-2 dark:border-[#ffffff1f] rounded-2xl w-full md:w-96 xl:w-[420px] h-24 px-5">
-                        <div className="flex items-center">
+                        <div className="">
                             <Image src={Phone} alt="Phone" />
-                            <h4 className='pl-5 font-normal text-[1.06rem] leading-[170%] text-[#0c0c0c] dark:text-[#eaeaea] opacity-70'>Phone</h4>
                         </div>
                         <div className="">
                             <h3 className='font-normal text-base leading-[170%] uppercase text-[#0c0c0c] dark:text-[#eaeaea]'>+880 19902463303</h3>
@@ -38,9 +37,8 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="mt-8 flex items-center justify-between px-5 bg-[#ffffff11] border-2 dark:border-[#ffffff1f] rounded-2xl w-full h-24">
-                    <div className="flex items-center justify-between">
+                    <div className="">
                         <Image src={Address} alt="Address" />
-                        <h4 className='pl-5 font-normal text-[1.06rem] leading-[170%] text-[#0c0c0c] dark:text-[#eaeaea] opacity-70'>Address</h4>
                     </div>
                     <div className="">
                         <h3 className='font-normal tracking-[2px] text-base leading-[170%] uppercase text-[#0c0c0c] dark:text-[#eaeaea] font-poppins'>Farmgate, Dhaka, Bangladesh</h3>
@@ -62,7 +60,7 @@ const Contact = () => {
                     <Link className='pb-10 flex gap-2 items-baseline justify-start font-semibold text-sm uppercase text-center text-[#0c0c0c] dark:text-white/[0.9] mt-8' href='#'>Send Message <Image src={Send2} alt='send2' /></Link>
                 </form>
             </div>
-            <p>console.log("esaedfvdavcdsa535235");</p>
+            {/* <p>console.log("esaedfvdavcdsa535235");</p> */}
         </div>
     )
 }
