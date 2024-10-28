@@ -26,13 +26,13 @@ const LeftSide = () => {
     }
     return (
         <div className={`${dark ? "dark" : null} cursor-pointer`}>
-            <div className={`leftSide text-[#FFF] absolute -left-full top-0 bg-[#fff] dark:bg-[#0c0c0c] h-full w-[338px] transition-all duration-300 ease-linear ${leftOpen ? "visible opacity-1 left-0" : "invisible opacity-0"}`}>
+            <div className={`leftSide text-[#FFF] absolute -left-full top-0 bg-[#fff] dark:bg-[#0c0c0c] h-full sm:w-[338px] w-[280px] transition-all duration-300 ease-linear ${leftOpen ? "visible opacity-1 left-0" : "invisible opacity-0"}`}>
                 <div onClick={LeftHandeler} className="absolute left-full top-0 bg-[#fff] dark:bg-[#0c0c0c] w-[68px] h-[68px] rounded-r-[32px] flex justify-center items-center cursor-pointer hover:bg-[#78CC6D] dark:hover:bg-[#78CC6D]">
                     <IoClose className='dark:text-[#FFFFFF] text-[#0c0c0c] text-[30px]' />
                 </div>
 
                 <div className="px-[25px] py-[25px] overflow-y-scroll h-[100vh] no-scrollbar">
-                    <div className="w-72 h-12 border border-[#666] relative">
+                    <div className="max-w-72 h-12 border border-[#666] relative">
                         <input type="text" className={`w-full h-full pl-3 pr-10 bg-transparent dark:text-[#fff] text-[#0c0c0c] ${jakarta.className}`} />
                         <div className="searchIcon absolute right-0 top-1/2 -translate-y-1/2 h-9 w-9 hover:bg-[#78CC6D] flex justify-center items-center mr-2">
                             <FaSearch className=' dark:text-[#fff] text-[#0c0c0c] text-[20px]' />
