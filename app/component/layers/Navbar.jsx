@@ -66,8 +66,8 @@ const Navbar = () => {
             </div>
             <Link href='#' onClick={clickmanager} className="dark:bg-[#0c0c0c] bg-[#fff] center rounded-3xl w-full sm:h-16 h-10 cursor-pointer group relative">
                 <FontAwesomeIcon className='sm:h-[26px] sm:w-[26px] dark:text-[#fff] text-[#0c0c0c] group-hover:text-[#78cc6d]' icon={faSun} />
-                <div className="absolute left-[75%] transition-all duration-300 ease-linear top-1/2 -translate-y-1/2 text-xs text-[#0C0C0C] uppercase py-1 px-3 font-medium bg-[#78cc6d] rounded-full">
-                    {dark ? "Dark" : "Light"}
+                <div className="absolute left-[65%] transition-all duration-300 ease-linear top-1/2 -translate-y-1/2 text-xs text-[#0C0C0C] uppercase py-1 px-3 font-medium bg-[#78cc6d] rounded-full group-hover:left-[100%] opacity-0 invisible group-hover:visible group-hover:opacity-100">
+                    {dark ? "Light" : "Dark"}
                 </div>
             </Link>
             <div className="dark:bg-[#0c0c0c] bg-[#fff] rounded-3xl w-full cursor-pointer ">
