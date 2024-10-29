@@ -18,6 +18,61 @@ const jakarta = Plus_Jakarta_Sans({
     subsets: ['latin']
 })
 
+
+
+
+
+let Works = [
+    {
+        title: "Brand Identity with Code",
+        go: '',
+    },
+    {
+        title: "Data Center Infrastructure",
+        go: '',
+    },
+    {
+        title: "Data Analytics Dashboard",
+        go: '',
+    },
+    {
+        title: "Creativity Is More Than",
+        go: '',
+    },
+]
+let Comments = [
+    {
+        title: "Data Center Infrastructure",
+        go: '',
+    },
+    {
+        title: "Data Center Infrastructure",
+        go: '',
+    },
+    {
+        title: "Music Player Design",
+        go: '',
+    },
+    {
+        title: "Creativity Is More Than",
+        go: '',
+    },
+]
+let Categories = [
+    {
+        title: "Code",
+        go: '',
+    },
+    {
+        title: "Design",
+        go: '',
+    },
+    {
+        title: "Development",
+        go: '',
+    },
+]
+
 const LeftSide = () => {
 
     let { dark, leftOpen, setLeftOpen } = useContext(Contex)
@@ -39,30 +94,32 @@ const LeftSide = () => {
                         </div>
                     </div>
                     <div className="mt-[50px]">
-                        <h2 className={`font-semibold text-lg leading-[117%] text-[#0c0c0c] dark:text-white/[0.9] pb-5 border-b dark:border-[#ffffff26] ${jakarta.className}`}>Recent Posts</h2>
-                        <h3 className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] ${poppins.className}`}>Brand Identity with Code</h3>
-                        <h3 className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] ${poppins.className}`}>Data Center Infrastructure</h3>
-                        <h3 className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] ${poppins.className}`}>Music Player Design</h3>
-                        <h3 className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] ${poppins.className}`}>Data Analytics Dashboard</h3>
-                        <h3 className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] ${poppins.className}`}>Creativity Is More Than</h3>
+                        <h2 className={`font-semibold text-lg leading-[117%] text-[#0c0c0c] dark:text-white/[0.9] pb-5 border-b dark:border-[#ffffff26] ${jakarta.className}`}>Recent Works</h2>
+                        {
+                            Works.map((item,index) => (
+                                <h3 key={index} className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] hover:text-[#78CC6D] dark:hover:text-[#78CC6D] hover:tracking-wider transition-all ease-in	duration-300 ${poppins.className}`}>{item.title}</h3>
+                            ))
+                        }
                     </div>
                     <div className="mt-[50px]">
                         <h2 className={`font-semibold text-lg leading-[117%] text-[#0c0c0c] dark:text-white/[0.9] pb-5 border-b dark:border-[#ffffff26] ${jakarta.className}`}>Recent Comments</h2>
-                        <h3 className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] ${poppins.className}`}>Brand Identity with Code</h3>
-                        <h3 className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] ${poppins.className}`}>Data Center Infrastructure</h3>
-                        <h3 className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] ${poppins.className}`}>Music Player Design</h3>
-                        <h3 className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] ${poppins.className}`}>Data Analytics Dashboard</h3>
-                        <h3 className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] ${poppins.className}`}>Creativity Is More Than</h3>
+                        {
+                            Comments.map((item,index) => (
+                                <h3 key={index} className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] hover:text-[#78CC6D] dark:hover:text-[#78CC6D] hover:tracking-wider transition-all ease-in	duration-300 ${poppins.className}`}>{item.title}</h3>
+                            ))
+                        }
                     </div>
                     <div className="mt-[50px]">
                         <h2 className={`font-semibold text-lg leading-[117%] text-[#0c0c0c] dark:text-white/[0.9] pb-5 border-b dark:border-[#ffffff26] ${jakarta.className}`}>Archives</h2>
-                        <h3 className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] ${poppins.className}`}>October 2024</h3>
+                        <h3 className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] hover:text-[#78CC6D] dark:hover:text-[#78CC6D] hover:tracking-wider transition-all ease-in	duration-300 ${poppins.className}`}>October 2024</h3>
                     </div>
                     <div className="mt-[50px]">
                         <h2 className={`font-semibold text-lg leading-[117%] text-[#0c0c0c] dark:text-white/[0.9] pb-5 border-b dark:border-[#ffffff26] ${jakarta.className}`}>Categories</h2>
-                        <h3 className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] ${poppins.className}`}>Code</h3>
-                        <h3 className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] ${poppins.className}`}>Design</h3>
-                        <h3 className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] ${poppins.className}`}>Development</h3>
+                        {
+                            Categories.map((item,index)=>(
+                                <h3 key={index} className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] hover:text-[#78CC6D] dark:hover:text-[#78CC6D] hover:tracking-wider transition-all ease-in duration-300 ${poppins.className}`}>{item.title}</h3>
+                            ))
+                        }
                     </div>
                 </div>
             </div>
