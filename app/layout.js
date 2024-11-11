@@ -262,8 +262,9 @@ export const metadata = {
     "Meta Tags",
     "Open Graph Protocol",
     "Structured Data Validation"
-  ]
-  ,
+  ],
+  image: "https://arakash.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fakash5.de7127fb.png&w=384&q=75",
+  images: ["https://arakash.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fakash5.de7127fb.png&w=384&q=75"],
   openGraph: {
     type: 'website',
     url: "https://arakash.vercel.app",
