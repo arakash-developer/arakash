@@ -1,3 +1,12 @@
+About Me __
+I am Atiqur Rahman Akash, a dedicated Next.js Developer with over 2.5 years of experience in designing and implementing fast, responsive, and scalable web applications. I specialize in creating innovative and efficient web solutions tailored to meet client needs.
+I possess a strong command of front-end technologies, including HTML, CSS, Bootstrap, Tailwind, JavaScript, jQuery, React.js, Redux, and Next.js. My skill set also includes crafting smooth animations using GSAP and collaborating on UI/UX designs with tools like Figma and Adobe XD. By leveraging GitHub for version control, I ensure seamless collaboration and effective code management across all my projects.
+I am committed to delivering high-quality, interactive user experiences. My problem-solving mindset and keen attention to detail empower me to tackle challenges efficiently and consistently meet project goals.I invite you to explore my portfolio to view examples of my work: arakash.vercel.app. For inquiries, please contact me at arakash.developer@gmail.com.
+
+favicon genarator
+https://realfavicongenerator.net/
+opengraph image recomandation size is : 1200X630px
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -34,3 +43,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
