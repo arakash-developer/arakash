@@ -3,9 +3,12 @@ I am Atiqur Rahman Akash, a dedicated Next.js Developer with over 2.5 years of e
 I possess a strong command of front-end technologies, including HTML, CSS, Bootstrap, Tailwind, JavaScript, jQuery, React.js, Redux, and Next.js. My skill set also includes crafting smooth animations using GSAP and collaborating on UI/UX designs with tools like Figma and Adobe XD. By leveraging GitHub for version control, I ensure seamless collaboration and effective code management across all my projects.
 I am committed to delivering high-quality, interactive user experiences. My problem-solving mindset and keen attention to detail empower me to tackle challenges efficiently and consistently meet project goals.I invite you to explore my portfolio to view examples of my work: arakash.vercel.app. For inquiries, please contact me at arakash.developer@gmail.com.
 
-favicon genarator
+favicon genarator : 256X256px
+app > favicon.ico
 https://realfavicongenerator.net/
 opengraph image recomandation size is : 1200X630px
+app > opengraph-image.png
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
