@@ -14,6 +14,11 @@ const page = () => {
             <p>gmail : arakash.figma@gmail.com</p>
             <p>password : akashfigma556600</p>
         </div>
+        <div className='my-5'>
+            <h1>Github </h1>
+            <p>gmail : arakash.figma@gmail.com</p>
+            <p>password : 9v2ketxb9hdj3vs</p>
+        </div>
 
     </Container>
   )
