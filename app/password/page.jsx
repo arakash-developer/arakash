@@ -20,7 +20,7 @@ const page = () => {
             <p>password : 9v2ketxb9hdj3vs</p>
         </div>
         <div className='my-5'>
-            <h1>Github </h1>
+            <h1>NPM JS </h1>
             <p>gmail : arakash.developer@gmail.com</p>
             <p>password : akashnpmjsdeveloper556600</p>
         </div>
