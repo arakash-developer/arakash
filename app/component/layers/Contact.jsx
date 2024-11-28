@@ -39,10 +39,16 @@ const Contact = () => {
         if (!email) {
             setEmailerror("Please Enter Your Email...")
         }
+        else if(!(/^[\w\-\.]+@([\w-]+\.)+[\w-]{2,}$/.test(email))){
+            setEmailerror("Email Please...")
+        }
         if (!messege) {
             setMessegeerror("Please Enter Your Messeges...")
-        }else{
+        } else {
             saveData();
+            setName("")
+            setEmail("")
+            setMessege("")
         }
     }
 
@@ -55,10 +61,17 @@ const Contact = () => {
             .then(function (response) {
                 // console.log(response);
                 setMessegeerror("Email Send SuccessFull!!")
+                emailsendgeeting();
             })
             .catch(function (error) {
                 console.log(error);
             });
+    }
+    let emailsendgeeting = () => {
+        setTimeout(() => {
+            setMessegeerror("")
+        }, 2000);
+
     }
     return (
         <div id='contact' className='mt-4 py-[90px] dark:bg-[#0c0c0c] bg-[#fff] side'>
@@ -100,14 +113,14 @@ const Contact = () => {
             </div>
             <div className="contactform">
                 <h2 className='mb-[46px] font-medium text-[2.38rem] leading-[130%] dark:text-[#fff] text-[#0c0c0c]'>Let's make your project brilliant!</h2>
-                <form action="">
+                <form>
                     <div className="flex items-center gap-8 flex-col lg:flex-row py-3">
                         <div className="relative">
                             <input onChange={namehandler} className='px-4 font-normal outline-none bg-transparent border dark:border-[#ffffff1f] text-base dark:text-[#999] text-[#0c0c0c] rounded-xl w-full xl:w-[374px] h-[50px]' type="text" name="" id="" value={name} placeholder='Full Name' />
                             <p className={`absolute top-full left-0 font-normal text-sm capitalize text-center text-[red] dark:text-[#78CC6D] my-1`} href='#'>{nameerror}</p>
                         </div>
                         <div className="relative">
-                            <input onChange={emailhandler} className='px-4 font-normal outline-none bg-transparent border dark:border-[#ffffff1f] text-base dark:text-[#999] text-[#0c0c0c] rounded-xl w-full xl:w-[374px] h-[50px]' type="email" name="" id="" value={email} placeholder='Email' />
+                            <input onChange={emailhandler} type='email' className='px-4 font-normal outline-none bg-transparent border dark:border-[#ffffff1f] text-base dark:text-[#999] text-[#0c0c0c] rounded-xl w-full xl:w-[374px] h-[50px]' value={email} placeholder='Email' />
                             <p className={`absolute top-full left-0 font-normal text-sm capitalize text-center text-[red] dark:text-[#78CC6D] my-1`} href='#'>{emailerror}</p>
                         </div>
                     </div>
