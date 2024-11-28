@@ -12,34 +12,52 @@ import axios from 'axios'
 
 
 const Contact = () => {
-    let handlerSendMessege = () => {
+    let [name, setName] = useState("");
+    let [nameerror, setNameerror] = useState("");
+    let [email, setEmail] = useState("");
+    let [emailerror, setEmailerror] = useState("");
+    let [messege, setMessege] = useState("");
+    let [messegeerror, setMessegeerror] = useState("");
+
+    let namehandler = (e) => {
+        setName(e.target.value);
+        setNameerror("");
+    }
+    let emailhandler = (e) => {
+        setEmail(e.target.value);
+        setEmailerror("")
+    }
+    let messegehandler = (e) => {
+        setMessege(e.target.value)
+        setMessegeerror("")
+    }
+    let formvalidation = () => {
+        if (!name) {
+            setNameerror("Please Enter Your Name...")
+        }
+        if (!email) {
+            setEmailerror("Please Enter Your Email...")
+        }
+        if (!messege) {
+            setMessegeerror("Please Enter Your Messeges...")
+        }else{
+            saveData();
+        }
+    }
+
+    let saveData = () => {
         axios.post('http://localhost:3000/create', {
-            "name": "Kabirxxx",
-            "email": "email",
-            "messege": "hellow"
+            name,
+            email,
+            messege
         })
             .then(function (response) {
-                console.log(response);
+                // console.log(response);
+                setMessegeerror("Email Send SuccessFull!!")
             })
             .catch(function (error) {
                 console.log(error);
             });
-    }
-    let [name, setName] = useState("");
-    let [email, setEmail] = useState("");
-    let [messege, setMessege] = useState("");
-    let [error, setError] = useState(null);
-    let formvalidation = () => {
-        if (!name) {
-            console.log("Enter Name");
-            setError("Please Enter Your Name...")
-        }
-        else if (!email) {
-            setError("Please Enter Your Email...")
-        }
-        else if (!messege) {
-            setError("Please Enter Your Messeges...")
-        }
     }
     return (
         <div id='contact' className='mt-4 py-[90px] dark:bg-[#0c0c0c] bg-[#fff] side'>
@@ -82,15 +100,21 @@ const Contact = () => {
             <div className="contactform">
                 <h2 className='mb-[46px] font-medium text-[2.38rem] leading-[130%] dark:text-[#fff] text-[#0c0c0c]'>Let's make your project brilliant!</h2>
                 <form action="">
-                    <div className="flex items-center gap-8 flex-col lg:flex-row">
-                        <input className='py-2 px-4 font-normal outline-none bg-transparent border dark:border-[#ffffff1f] text-base dark:text-[#999] text-[#0c0c0c] rounded-xl w-full xl:w-[374px] h-[50px]' type="text" name="" id="" placeholder='Full Name' />
-                        <input className='py-2 px-4 font-normal outline-none bg-transparent border dark:border-[#ffffff1f] text-base dark:text-[#999] text-[#0c0c0c] rounded-xl w-full xl:w-[374px] h-[50px]' type="email" name="" id="" placeholder='Email' />
+                    <div className="flex items-center gap-8 flex-col lg:flex-row py-3">
+                        <div className="relative">
+                            <input onChange={namehandler} className='px-4 font-normal outline-none bg-transparent border dark:border-[#ffffff1f] text-base dark:text-[#999] text-[#0c0c0c] rounded-xl w-full xl:w-[374px] h-[50px]' type="text" name="" id="" value={name} placeholder='Full Name' />
+                            <p className={`absolute top-full left-0 font-normal text-sm capitalize text-center text-[red] dark:text-[#78CC6D] my-1`} href='#'>{nameerror}</p>
+                        </div>
+                        <div className="relative">
+                            <input onChange={emailhandler} className='px-4 font-normal outline-none bg-transparent border dark:border-[#ffffff1f] text-base dark:text-[#999] text-[#0c0c0c] rounded-xl w-full xl:w-[374px] h-[50px]' type="email" name="" id="" value={email} placeholder='Email' />
+                            <p className={`absolute top-full left-0 font-normal text-sm capitalize text-center text-[red] dark:text-[#78CC6D] my-1`} href='#'>{emailerror}</p>
+                        </div>
                     </div>
-                    <textarea className='mt-8 rounded-xl w-full lg:w-[48.69rem] h-[120px] py-2 px-4 outline-none bg-transparent border dark:border-[#ffffff1f] dark:text-[#999] text-[#0c0c0c]' name="" id="">Messsege</textarea>
                     <div className="relative">
-                        <p className={`absolute -top-8 left-0 font-normal text-sm capitalize text-center text-[red] dark:text-[#78CC6D] my-1 ${error ? "block":"hidden"}`} href='#'>{error}</p>
-                        <Link onClick={formvalidation} className='pb-10 flex gap-2 items-baseline justify-start font-semibold text-sm uppercase text-center text-[#0c0c0c] dark:text-white/[0.9] mt-8' href='#'>Send Message <Image src={Send2} alt='send2' /></Link>
+                        <textarea onChange={messegehandler} className='mt-8 rounded-xl w-full lg:w-[48.69rem] h-[120px] py-2 px-4 outline-none bg-transparent border dark:border-[#ffffff1f] dark:text-[#999] text-[#0c0c0c]' name="" id="" value={messege}></textarea>
+                        <p className={`absolute top-full left-0 font-normal text-sm capitalize text-center text-[red] dark:text-[#78CC6D] my-1`} href='#'>{messegeerror}</p>
                     </div>
+                    <Link onClick={formvalidation} className='pb-10 flex gap-2 items-baseline justify-start font-semibold text-sm uppercase text-center text-[#0c0c0c] dark:text-white/[0.9] mt-8' href='#'>Send Message <Image src={Send2} alt='send2' /></Link>
                 </form>
             </div>
             {/* <p>console.log("esaedfvdavcdsa535235");</p> */}
