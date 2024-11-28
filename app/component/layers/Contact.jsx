@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image'
@@ -7,9 +8,39 @@ import Mail from '../../../public/icon/mail.png'
 import Address from '../../../public/icon/address.png'
 import Link from 'next/link'
 import Send2 from '../../../public/icon/send2.png'
+import axios from 'axios'
 
 
 const Contact = () => {
+    let handlerSendMessege = () => {
+        axios.post('http://localhost:3000/create', {
+            "name": "Kabirxxx",
+            "email": "email",
+            "messege": "hellow"
+        })
+            .then(function (response) {
+                console.log(response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    }
+    let [name, setName] = useState("");
+    let [email, setEmail] = useState("");
+    let [messege, setMessege] = useState("");
+    let [error, setError] = useState(null);
+    let formvalidation = () => {
+        if (!name) {
+            console.log("Enter Name");
+            setError("Please Enter Your Name...")
+        }
+        else if (!email) {
+            setError("Please Enter Your Email...")
+        }
+        else if (!messege) {
+            setError("Please Enter Your Messeges...")
+        }
+    }
     return (
         <div id='contact' className='mt-4 py-[90px] dark:bg-[#0c0c0c] bg-[#fff] side'>
             <p className='mb-2 dark:text-[#fff] text-[#0c0c0c] uppercase border-2 dark:border-[#ffffff1f] rounded-full inline-flex py-2 px-5 items-center gap-2'>
@@ -55,9 +86,11 @@ const Contact = () => {
                         <input className='py-2 px-4 font-normal outline-none bg-transparent border dark:border-[#ffffff1f] text-base dark:text-[#999] text-[#0c0c0c] rounded-xl w-full xl:w-[374px] h-[50px]' type="text" name="" id="" placeholder='Full Name' />
                         <input className='py-2 px-4 font-normal outline-none bg-transparent border dark:border-[#ffffff1f] text-base dark:text-[#999] text-[#0c0c0c] rounded-xl w-full xl:w-[374px] h-[50px]' type="email" name="" id="" placeholder='Email' />
                     </div>
-                    <textarea className='mt-8 rounded-xl w-full lg:w-[48.69rem] h-[120px] py-2 px-4 outline-none bg-transparent border dark:border-[#ffffff1f] dark:text-[#999] text-[#0c0c0c]' name="" id=""></textarea>
-
-                    <Link className='pb-10 flex gap-2 items-baseline justify-start font-semibold text-sm uppercase text-center text-[#0c0c0c] dark:text-white/[0.9] mt-8' href='#'>Send Message <Image src={Send2} alt='send2' /></Link>
+                    <textarea className='mt-8 rounded-xl w-full lg:w-[48.69rem] h-[120px] py-2 px-4 outline-none bg-transparent border dark:border-[#ffffff1f] dark:text-[#999] text-[#0c0c0c]' name="" id="">Messsege</textarea>
+                    <div className="relative">
+                        <p className={`absolute -top-8 left-0 font-normal text-sm capitalize text-center text-[red] dark:text-[#78CC6D] my-1 ${error ? "block":"hidden"}`} href='#'>{error}</p>
+                        <Link onClick={formvalidation} className='pb-10 flex gap-2 items-baseline justify-start font-semibold text-sm uppercase text-center text-[#0c0c0c] dark:text-white/[0.9] mt-8' href='#'>Send Message <Image src={Send2} alt='send2' /></Link>
+                    </div>
                 </form>
             </div>
             {/* <p>console.log("esaedfvdavcdsa535235");</p> */}
