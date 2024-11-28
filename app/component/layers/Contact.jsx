@@ -31,7 +31,8 @@ const Contact = () => {
         setMessege(e.target.value)
         setMessegeerror("")
     }
-    let formvalidation = () => {
+    let formvalidation = (e) => {
+        e.preventDefault()
         if (!name) {
             setNameerror("Please Enter Your Name...")
         }
@@ -114,7 +115,7 @@ const Contact = () => {
                         <textarea onChange={messegehandler} className='mt-8 rounded-xl w-full lg:w-[48.69rem] h-[120px] py-2 px-4 outline-none bg-transparent border dark:border-[#ffffff1f] dark:text-[#999] text-[#0c0c0c]' name="" id="" value={messege}></textarea>
                         <p className={`absolute top-full left-0 font-normal text-sm capitalize text-center text-[red] dark:text-[#78CC6D] my-1`} href='#'>{messegeerror}</p>
                     </div>
-                    <Link onClick={formvalidation} className='pb-10 flex gap-2 items-baseline justify-start font-semibold text-sm uppercase text-center text-[#0c0c0c] dark:text-white/[0.9] mt-8' href='#'>Send Message <Image src={Send2} alt='send2' /></Link>
+                    <button type='button' onClick={formvalidation} className='pb-10 flex gap-2 items-baseline justify-start font-semibold text-sm uppercase text-center text-[#0c0c0c] dark:text-white/[0.9] mt-8' href='#'>Send Message <Image src={Send2} alt='send2' /></button>
                 </form>
             </div>
             {/* <p>console.log("esaedfvdavcdsa535235");</p> */}
