@@ -1,14 +1,13 @@
 import React from 'react'
 import Container from '../component/layers/Container'
 import Link from 'next/link';
-
+import DataDelete from '../component/layers/DataDelete';
+import getAllData from '../lib/getAllData';
 const page = async () => {
-    let blob = await fetch("https://akashapi.vercel.app/read");
-    let response = await blob.json();
+    let response = await getAllData();
     let messege = response.messege;
     messege.reverse()
     console.log(messege);
-
     return (
         <Container className='mt-10'>
             <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -46,9 +45,7 @@ const page = async () => {
                                     <td className="px-6 py-4">
                                         {meg.messege}
                                     </td>
-                                    <td className="px-6 py-4 text-right">
-                                        <Link href={`messeges/${meg._id}`} className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Delete</Link>
-                                    </td>
+                                    <DataDelete id={meg._id}/>
                                 </tr>
                             ))
                         }
