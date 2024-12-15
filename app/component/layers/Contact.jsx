@@ -59,7 +59,7 @@ const Contact = () => {
             messege
         })
             .then(function (response) {
-                // console.log(response);
+                console.log(response);
                 setMessegeerror("Email Send SuccessFull!!")
                 emailsendgeeting();
             })
