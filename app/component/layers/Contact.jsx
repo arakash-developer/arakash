@@ -53,7 +53,7 @@ const Contact = () => {
     }
 
     let saveData = () => {
-        axios.post('http://localhost:3000/create', {
+        axios.post('https://akashapi.vercel.app/create', {
             name,
             email,
             messege
