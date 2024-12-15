@@ -6,7 +6,7 @@ import ProjectData from '@/helper/ProjectData'
 
 const Projects = () => {
   let [currentData, setCurrentData] = useState(ProjectData)
-  let categoryItem = ["all", ...new Set(ProjectData.map((item) => (item.subtitle)))]
+  let categoryItem = ["all",...new Set(ProjectData.map((item) => (item.subtitle)))]
     let projectClick = (subtitle) => {
       if (subtitle === "all") {
         setCurrentData(ProjectData)
