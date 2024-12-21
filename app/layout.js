@@ -288,6 +288,15 @@ export default function RootLayout({ children }) {
     <html lang="en" className=''>
       <head>
         <meta name="google-site-verification" content="j13FRaiJX0ckKou6S6sA4r2TMw4qsqA8oq3sjwgYnEc" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNTETKSX4Y"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-XNTETKSX4Y');
+        </script>
         <link rel="icon" type="image/x-icon" href="./favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true' />
