@@ -292,6 +292,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className=''>
       <head>
         <meta name="google-site-verification" content="j13FRaiJX0ckKou6S6sA4r2TMw4qsqA8oq3sjwgYnEc" />
+        <meta name="msvalidate.01" content="FDF30D027E4945AEBD64617249FD6542" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="./favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
