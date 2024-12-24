@@ -18,6 +18,7 @@ const Contact = () => {
     let [emailerror, setEmailerror] = useState("");
     let [messege, setMessege] = useState("");
     let [messegeerror, setMessegeerror] = useState("");
+    // let [loading, setisloading] = useState();
 
     let namehandler = (e) => {
         setName(e.target.value);
@@ -53,13 +54,14 @@ const Contact = () => {
     }
 
     let saveData = () => {
+        setMessegeerror("Loading...")
         axios.post('https://akashapi.vercel.app/create', {
             name,
             email,
             messege
         })
-            .then(function (response) {
-                console.log(response);
+        .then(function (response) {
+                setMessegeerror("Loading...")
                 setMessegeerror("Email Send SuccessFull!!")
                 emailsendgeeting();
             })
@@ -108,18 +110,18 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className="map mb-[90px] w-[780px] h-[450px]">
+            <div className="map mb-[90px] max-w-[780px] h-[450px]">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.8776111855225!2d90.38719611156844!3d23.756106697395374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8a426199b0d%3A0x6a2c655d06c88ec9!2sFarmgate%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1728291119158!5m2!1sen!2sbd" className='w-full h-full dark:mix-blend-luminosity' style={{ border: "0", allowfullscreen: "", loading: "lazy" }} referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div className="contactform">
                 <h2 className='mb-[46px] font-medium text-[2.38rem] leading-[130%] dark:text-[#fff] text-[#0c0c0c]'>Let's make your project brilliant!</h2>
                 <form>
                     <div className="flex items-center gap-8 flex-col lg:flex-row py-3">
-                        <div className="relative">
+                        <div className="relative w-full">
                             <input onChange={namehandler} className='px-4 font-normal outline-none bg-transparent border dark:border-[#ffffff1f] text-base dark:text-[#999] text-[#0c0c0c] rounded-xl w-full xl:w-[374px] h-[50px]' type="text" name="" id="" value={name} placeholder='Full Name' />
                             <p className={`absolute top-full left-0 font-normal text-sm capitalize text-center text-[red] dark:text-[#78CC6D] my-1`} href='#'>{nameerror}</p>
                         </div>
-                        <div className="relative">
+                        <div className="relative w-full">
                             <input onChange={emailhandler} type='email' className='px-4 font-normal outline-none bg-transparent border dark:border-[#ffffff1f] text-base dark:text-[#999] text-[#0c0c0c] rounded-xl w-full xl:w-[374px] h-[50px]' value={email} placeholder='Email' />
                             <p className={`absolute top-full left-0 font-normal text-sm capitalize text-center text-[red] dark:text-[#78CC6D] my-1`} href='#'>{emailerror}</p>
                         </div>
