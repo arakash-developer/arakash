@@ -565,7 +565,7 @@ const page = () => {
                     <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2" />
                   </div>
                   <div>
-                    <div className="font-semibold">Atiqur Rahman Akash</div>
+                    <div className="font-semibold cursor-pointer">Atiqur Rahman Akash</div>
                     <span className="text-sm text-gray-500">38m</span>
                   </div>
                 </div>
@@ -580,7 +580,7 @@ const page = () => {
               </div>
               {/* END POST CONTENT */}
               {/* POST IMAGE */}
-              <div className="py-2">
+              <div className="my-2 bg-red-200 flex justify-center">
                 <Image src={Akash4} alt="Post image" />
               </div>
               {/* END POST IMAGE */}
