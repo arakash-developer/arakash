@@ -127,7 +127,7 @@ const page = () => {
                 className="rounded-full h-7 w-7"
               />
               <span className="mx-2 font-semibold dark:text-dark-txt">
-                Tuat
+                Akash
               </span>
             </a>
           </li>
@@ -453,7 +453,7 @@ const page = () => {
                 className="w-10 h-10 rounded-full"
               />
               <div className="flex-1 bg-gray-100 rounded-full flex items-center justify-start pl-4 cursor-pointer dark:bg-dark-third text-gray-500 text-lg dark:text-dark-txt">
-                <span>What's on your mind, Tuat?</span>
+                <span>What's on your mind, Akash?</span>
               </div>
             </div>
             <div className="p-2 flex">
