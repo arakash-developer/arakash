@@ -6,6 +6,13 @@ import Avt2 from "@/public/avt-2.jpg";
 import Avt3 from "@/public/avt-3.jpg";
 import Avt4 from "@/public/avt-4.jpg";
 import Avt5 from "@/public/avt-5.jpg";
+import { MdOndemandVideo } from "react-icons/md";
+import { RiHome5Fill } from "react-icons/ri";
+import { FaStore } from "react-icons/fa";
+import { MdGroups } from "react-icons/md";
+import { SiFacebookgaming } from "react-icons/si";
+
+
 
 const page = () => {
   return (
@@ -52,7 +59,7 @@ const page = () => {
               href="#"
               className="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block text-blue-500 border-b-4 border-blue-500"
             >
-              <i className="bx bxs-home" />
+              <RiHome5Fill />
             </a>
           </li>
           <li className="w-1/5 md:w-max text-center">
@@ -60,7 +67,7 @@ const page = () => {
               href="#"
               className="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative"
             >
-              <i className="bx bx-movie-play" />
+              <MdOndemandVideo />
               <span className="text-xs absolute top-0 right-1/4 bg-red-500 text-white font-semibold rounded-full px-1 text-center">
                 9+
               </span>
@@ -71,7 +78,7 @@ const page = () => {
               href="#"
               className="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative"
             >
-              <i className="bx bx-store" />
+              <FaStore />
             </a>
           </li>
           <li className="w-1/5 md:w-max text-center">
@@ -79,7 +86,8 @@ const page = () => {
               href="#"
               className="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative"
             >
-              <i className="bx bx-group" />
+              <MdGroups />
+              {/* <i className="bx bx-group" /> */}
             </a>
           </li>
           <li className="w-1/5 md:w-max text-center hidden md:inline-block">
@@ -87,7 +95,10 @@ const page = () => {
               href="#"
               className="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative"
             >
-              <i className="bx bx-layout" />
+              {/* <i className="bx bx-layout" />
+               */}
+               <SiFacebookgaming />
+
               <span className="text-xs absolute top-0 right-1/4 bg-red-500 text-white font-semibold rounded-full px-1 text-center">
                 9+
               </span>
@@ -350,8 +361,8 @@ const page = () => {
             </div>
             <div className="w-1/4 sm:w-1/6 h-44 rounded-xl overflow-hidden">
               <div className="relative h-full group cursor-pointer">
-                <img
-                  src="./images/story.jpg"
+                <Image
+                  src={Akash5}
                   alt="Story images"
                   className="group-hover:transform group-hover:scale-110 transition-all duration-700 h-full w-full"
                 />
@@ -360,7 +371,7 @@ const page = () => {
                   Your story
                 </span>
                 <div className="w-10 h-10 rounded-full overflow-hidden absolute top-2 left-2 border-4 border-blue-500">
-                  <img src="./images/tuat.jpg" alt="Profile picture" />
+                  <Image src={Akash4} alt="Profile picture" />
                 </div>
               </div>
             </div>
@@ -436,8 +447,8 @@ const page = () => {
           {/* POST FORM */}
           <div className="px-4 mt-4 shadow rounded-lg bg-white dark:bg-dark-second">
             <div className="p-2 border-b border-gray-300 dark:border-dark-third flex space-x-4">
-              <img
-                src="./images/tuat.jpg"
+              <Image
+                src={Akash4}
                 alt="Profile picture"
                 className="w-10 h-10 rounded-full"
               />
@@ -477,74 +488,34 @@ const page = () => {
                 </span>
               </div>
               <div className="relative cursor-pointer">
-                <img
-                  src="./images/avt-3.jpg"
-                  alt="Profile picture"
+                <Image
+                  src={Avt2}
+                  alt={Avt2}
                   className="rounded-full"
                 />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2" />
               </div>
               <div className="relative cursor-pointer">
-                <img
-                  src="./images/avt-4.jpg"
-                  alt="Profile picture"
-                  className="rounded-full"
+              <Image
+                  src={Avt5}
+                  alt={Avt5}
+                  className="rounded-full w-full h-full object-cover"
                 />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2" />
               </div>
               <div className="relative cursor-pointer">
-                <img
-                  src="./images/avt-5.jpg"
-                  alt="Profile picture"
-                  className="rounded-full"
+              <Image
+                  src={Avt4}
+                  alt={Avt4}
+                  className="rounded-full w-full h-full object-cover"
                 />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2" />
               </div>
               <div className="relative cursor-pointer">
-                <img
-                  src="./images/avt-2.jpg"
-                  alt="Profile picture"
-                  className="rounded-full"
-                />
-                <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2" />
-              </div>
-              <div className="relative cursor-pointer hidden sm:inline">
-                <img
-                  src="./images/avt-3.jpg"
-                  alt="Profile picture"
-                  className="rounded-full"
-                />
-                <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2" />
-              </div>
-              <div className="relative cursor-pointer hidden sm:inline">
-                <img
-                  src="./images/avt-4.jpg"
-                  alt="Profile picture"
-                  className="rounded-full"
-                />
-                <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2" />
-              </div>
-              <div className="relative cursor-pointer hidden sm:inline">
-                <img
-                  src="./images/avt-5.jpg"
-                  alt="Profile picture"
-                  className="rounded-full"
-                />
-                <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2" />
-              </div>
-              <div className="relative cursor-pointer hidden sm:inline">
-                <img
-                  src="./images/avt-7.jpg"
-                  alt="Profile picture"
-                  className="rounded-full"
-                />
-                <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2" />
-              </div>
-              <div className="relative cursor-pointer hidden sm:inline">
-                <img
-                  src="./images/avt-3.jpg"
-                  alt="Profile picture"
-                  className="rounded-full"
+              <Image
+                  src={Avt5}
+                  alt={Avt5}
+                  className="rounded-full w-full h-full object-cover"
                 />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2" />
               </div>
