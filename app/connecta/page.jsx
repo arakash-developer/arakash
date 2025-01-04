@@ -2,6 +2,10 @@ import Image from "next/image";
 import Fblogo from "@/public/fb-logo.png";
 import Akash4 from "@/public/akash4.png";
 import Akash5 from "@/public/akash5.jpg";
+import Avt2 from "@/public/avt-2.jpg";
+import Avt3 from "@/public/avt-3.jpg";
+import Avt4 from "@/public/avt-4.jpg";
+import Avt5 from "@/public/avt-5.jpg";
 
 const page = () => {
   return (

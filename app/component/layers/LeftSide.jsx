@@ -6,6 +6,7 @@ import { Contex } from '../../contex/DarkContext'
 import { Poppins } from 'next/font/google'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import { FaSearch } from "react-icons/fa";
+import Link from 'next/link';
 
 
 const poppins = Poppins({
@@ -24,8 +25,8 @@ const jakarta = Plus_Jakarta_Sans({
 
 let Works = [
     {
-        title: "Brand Identity with Code",
-        go: '',
+        title: "Connecta - Social Network",
+        go: '/connecta',
     },
     {
         title: "Data Center Infrastructure",
@@ -97,7 +98,9 @@ const LeftSide = () => {
                         <h2 className={`font-semibold text-lg leading-[117%] text-[#0c0c0c] dark:text-white/[0.9] pb-5 border-b dark:border-[#ffffff26] ${jakarta.className}`}>Recent Works</h2>
                         {
                             Works.map((item,index) => (
-                                <h3 key={index} className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] hover:text-[#78CC6D] dark:hover:text-[#78CC6D] hover:tracking-wider transition-all ease-in	duration-300 ${poppins.className}`}>{item.title}</h3>
+                            <Link key={index} href={item.go}>
+                                <h3 className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] hover:text-[#78CC6D] dark:hover:text-[#78CC6D] hover:tracking-wider transition-all ease-in	duration-300 ${poppins.className}`}>{item.title}</h3>
+                            </Link>
                             ))
                         }
                     </div>
