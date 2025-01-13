@@ -33,7 +33,7 @@ export default function Root() {
 
   return (
     <>
-      <div className="w-[100vw] h-[100vh] bg-[url('../public/bg.png')] bg-center bg-cover overflow-hidden relative">
+      <div className="w-full h-full bg-[url('../public/bg.png')] bg-center bg-cover overflow-hidden relative">
         <Container className='pt-5 lg:pt-[70px]'>
           <div className="flex gap-1 sm:gap-3 items-start">
             <Navbar />
@@ -43,8 +43,8 @@ export default function Root() {
             </div>
           </div>
         </Container>
-        <LeftSide />
       </div>
+        <LeftSide />
     </>
   );
 }
