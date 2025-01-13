@@ -7,10 +7,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useContext } from 'react'
 
-const Profile = () => {
+const Profile = ({className}) => {
     let { dark } = useContext(Contex)
     return (
-        <div className={`${dark ? "dark" : null}`}>
+        <div className={`${dark ? "dark" : null} ${className}`}>
             <div className="dark:bg-[#0c0c0c] bg-[#fff] rounded-b-3xl rounded-tl-3xl text-[#0c0c0c] dark:text-[#fff]">
                 <div className='p-5 md:p-10'>
                     <div className="rounded-b-3xl rounded-tl-3xl lg:w-72 lg:h-72 bg-stone-200 overflow-hidden">

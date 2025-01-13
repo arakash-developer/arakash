@@ -81,7 +81,7 @@ const LeftSide = () => {
         setLeftOpen(!leftOpen)
     }
     return (
-        <div className={`${dark ? "dark" : null} cursor-pointer`}>
+        <div className={`${dark ? "dark" : null} cursor-pointer mt-10`}>
             <div className={`leftSide text-[#FFF] absolute -left-full top-0 bg-[#fff] dark:bg-[#0c0c0c] h-full sm:w-[338px] w-[280px] transition-all duration-300 ease-in-out box-shadow ${leftOpen ? "visible opacity-1 left-0" : "invisible opacity-0"}`}>
                 <div onClick={LeftHandeler} className="absolute left-full top-0 bg-[#fff] dark:bg-[#0c0c0c] w-[68px] h-[68px] rounded-r-[32px] flex justify-center items-center cursor-pointer hover:bg-[#78CC6D] dark:hover:bg-[#78CC6D]">
                     <IoClose className='dark:text-[#FFFFFF] text-[#0c0c0c] text-[30px]' />

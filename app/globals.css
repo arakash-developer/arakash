@@ -11,6 +11,10 @@
   background: var(--backdrop);
 }
 
+html,body{
+  height: 100%;
+  width: 100%;
+}
 /* add the code bellow */ 
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */

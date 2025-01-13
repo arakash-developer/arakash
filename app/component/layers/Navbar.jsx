@@ -13,7 +13,7 @@ import { faUserPen } from '@fortawesome/free-solid-svg-icons'
 import { faSun } from '@fortawesome/free-regular-svg-icons'
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
 
-const Navbar = () => {
+const Navbar = ({className}) => {
     let IconData = [
         {
             title: "about",
@@ -60,7 +60,7 @@ const Navbar = () => {
         setLeftOpen(true)
     }
     return (
-        <div className={`w-[95px] flex flex-col gap-2 ${dark ? "dark" : null}`}>
+        <div className={`w-[95px] flex flex-col gap-2 ${dark ? "dark" : null} ${className}`}>
             <div onClick={LeftHandeler} className="bg-[#fff] dark:bg-[#0C0C0C] dark:text-[#fff] center rounded-3xl w-full h-10 sm:h-16 cursor-pointer group">
                 <FontAwesomeIcon className='sm:h-[26px] sm:w-[26px] dark:text-[#fff] text-[#0c0c0c] group-hover:text-[#78cc6d] px-2 md:px-0' icon={faBarsStaggered} />
             </div>
