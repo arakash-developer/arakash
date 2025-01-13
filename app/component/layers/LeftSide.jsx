@@ -98,7 +98,7 @@ const LeftSide = () => {
                         <h2 className={`font-semibold text-lg leading-[117%] text-[#0c0c0c] dark:text-white/[0.9] pb-5 border-b dark:border-[#ffffff26] ${jakarta.className}`}>Recent Works</h2>
                         {
                             Works.map((item,index) => (
-                            <Link key={index} href={item.go}>
+                            <Link target='_blank' key={index} href={item.go}>
                                 <h3 className={`mt-3 pb-3 border-b dark:border-[#ffffff26] font-normal text-sm text-[#0c0c0c] dark:text-white/[0.9] hover:text-[#78CC6D] dark:hover:text-[#78CC6D] hover:tracking-wider transition-all ease-in	duration-300 ${poppins.className}`}>{item.title}</h3>
                             </Link>
                             ))
