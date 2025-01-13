@@ -48,7 +48,7 @@ const Navbar = () => {
         {
             title: "contact",
             icon: faPaperPlane,
-            go: "#contact",
+            go: "#sendme",
         },
     ]
 

@@ -1,15 +1,11 @@
 "use client"
-import { useContext } from 'react'
-import Image from 'next/image'
-import Akash4 from '@/public/akash4.png'
-import Akash5 from '@/public/akash5.png'
 import { Contex } from '@/app/contex/DarkContext'
-import Link from 'next/link'
+import Akash5 from '@/public/akash5.png'
+import { faFacebook, faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useContext } from 'react'
 
 const Profile = () => {
     let { dark } = useContext(Contex)
@@ -40,10 +36,10 @@ const Profile = () => {
                     </div>
                 </div>
                 <div className="button flex justify-between ">
-                    <Link href='#' className='w-1/2 font-semibold text-sm text-center py-6 border-t-2 border-r dark:border-[#ffffff1f] rounded-bl-3xl'>
+                    <a href='/me.pdf'  download="Atiqur Rahman Akash" className='w-1/2 font-semibold text-sm text-center py-6 border-t-2 border-r dark:border-[#ffffff1f] rounded-bl-3xl'>
                         Download Cv
-                    </Link>
-                    <Link href='#' className='w-1/2 font-semibold text-sm text-center py-6 border-l border-t-2 dark:border-[#ffffff1f] rounded-br-3xl'>
+                    </a>
+                    <Link href='#sendme' className='w-1/2 font-semibold text-sm text-center py-6 border-l border-t-2 dark:border-[#ffffff1f] rounded-br-3xl'>
                         Contact Me
                     </Link>
                 </div>
