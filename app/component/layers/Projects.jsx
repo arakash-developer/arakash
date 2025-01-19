@@ -24,7 +24,7 @@ const Projects = () => {
           Projects
         </p>
         <h2 className='mt-3 mb-[45px] dark:text-[#fff] text-[#0c0c0c] font-medium text-[2.38rem] leading-[130%]'>Explore Portfolio By Technology</h2>
-        <div className="heading flex items-center gap-3 mb-8">
+        <div className="heading flex flex-wrap items-center gap-3 mb-8">
           {
             categoryItem.map((item, index) => {
               return (
