@@ -1,5 +1,12 @@
 const ProjectData = [
     {
+        id:4,
+        title:"TechStore is a tech eCommerce platform built with Next.js,Express,Mongoose,Redux",
+        image:"/projects/techstore.png",
+        subtitle:"mern",
+        go:"https://techstore100.vercel.app/",
+    },
+    {
         id:1,
         title:"Orebi | Ecomarce Web Templete",
         image:"/projects/orebi.jpg",
@@ -26,13 +33,6 @@ const ProjectData = [
         image:"/projects/orgafe.jpg",
         subtitle:"basic",
         go:"https://orgafe-basicvercelapp.vercel.app/",
-    },
-    {
-        id:4,
-        title:"The App Market on Google Play",
-        image:"/projects/project1.png",
-        subtitle:"mern",
-        go:"",
     },
 ]
 export default ProjectData;
