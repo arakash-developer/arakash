@@ -1,7 +1,7 @@
 "use client"
 import { Contex } from '@/app/contex/DarkContext'
 import Akash5 from '@/public/akash5.png'
-import { faFacebook, faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faGithub, faLinkedin, faTwitter ,faInstagram} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -30,6 +30,9 @@ const Profile = ({className}) => {
                                 <FontAwesomeIcon className='dark:text-[#fff] text-[#0c0c0c]' icon={faFacebook} />
                             </Link>
                             <Link target='_blank' href='https://www.instagram.com/arakash.developer/' className='inline-block center rounded-2xl w-12 h-12 border-2 dark:border-[#ffffff1f]'>
+                                <FontAwesomeIcon className='dark:text-[#fff] text-[#0c0c0c]' icon={faInstagram} />
+                            </Link>
+                            <Link target='_blank' href='https://x.com/dev_arakash' className='inline-block center rounded-2xl w-12 h-12 border-2 dark:border-[#ffffff1f]'>
                                 <FontAwesomeIcon className='dark:text-[#fff] text-[#0c0c0c]' icon={faTwitter} />
                             </Link>
                         </div>
