@@ -7,17 +7,10 @@ const ProjectData = [
         go:"https://techstore100.vercel.app/",
     },
     {
-        id:1,
-        title:"Orebi | Ecomarce Web Templete",
-        image:"/projects/orebi.jpg",
-        subtitle:"next",
-        go:"https://orebi10.vercel.app/",
-    },
-    {
         id:2,
         title:"Orebi | Ecomarce Web Templete",
         image:"/projects/orebi.jpg",
-        subtitle:"react",
+        subtitle:"next",
         go:"https://orebi10.vercel.app/",
     },
     {
@@ -33,6 +26,13 @@ const ProjectData = [
         image:"/projects/orgafe.jpg",
         subtitle:"basic",
         go:"https://orgafe-basicvercelapp.vercel.app/",
+    },
+    {
+        id:1,
+        title:"Orebi | Ecomarce Web Templete",
+        image:"/projects/orebi.jpg",
+        subtitle:"react",
+        go:"https://orebi10.vercel.app/",
     },
 ]
 export default ProjectData;
