@@ -1,7 +1,7 @@
 const ProjectData = [
     {
         id:4,
-        title:"TechStore is a tech eCommerce platform built with Next.js,Express,Mongoose,Redux",
+        title:"TechStore is a Tech ECommerce",
         image:"/projects/techstore.png",
         subtitle:"mern",
         go:"https://techstore100.vercel.app/",
