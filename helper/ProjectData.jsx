@@ -47,3 +47,12 @@ const ProjectData = [
     },
 ]
 export default ProjectData;
+
+// Completed – When the project is fully finished.
+// In Progress – When work is ongoing but not yet finished.
+// On Hold – If the project has been paused for any reason.
+// Not Started – If work has not yet begun.
+// Pending Review – If the project is completed but awaiting feedback or approval.
+// Delayed – If the project is behind schedule.
+// Under Construction – If the project is still being built or developed.
+// Cancelled – If the project has been called off or abandoned.
