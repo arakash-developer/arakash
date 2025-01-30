@@ -36,7 +36,7 @@ const Projects = () => {
         <div className="gallery grid grid-cols-1 xl:grid-cols-2 gap-[30px]">
           {
             currentData.map((item,index) => (
-              <ProjectCard key={index} img={item.image} title={item.title} subtitle={item.subtitle} go={item.go} />
+              <ProjectCard key={index} img={item.image} title={item.title} subtitle={item.subtitle} go={item.go} status={item.status}/>
             ))
 
           }

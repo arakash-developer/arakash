@@ -1,30 +1,51 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-
-const ProjectCard = ({ img, title, subtitle, go }) => {
-    return (
-        <div className="rounded-2xl w-full xl:w-96 bg-[#ffffff1f] border-2 dark:border-[#ffffff1f]">
-            <div className="m-3">
-                <div className=" w-full xl:w-[352px] h-72 overflow-hidden rounded-xl">
-                    <Image className='w-full h-full object-cover' src={img} width='352' height='288'  alt='project1' />
-                </div>
-            </div>
-            <div className="mt-[18px] mb-[30px] mx-5 flex justify-between items-end">
-                <div>
-                    <h3 className='font-medium text-[1.06rem] leading-[130%] text-[#0c0c0c] dark:text-[#fff]'>{title}</h3>
-                    <Link href='#' className='font-normal text-xs leading-[170%] uppercase dark:text-[#999] py-1 px-4 bg-[#00000010] text-[#000] dark:bg-[#ffffff1f]  dark:hover:bg-[#78cc6d] dark:hover:text-[#fff] hover:bg-[#78cc6d] transition-all duration-300 ease-linear mt-2 rounded-3xl inline-block'>
-                        {subtitle}
-                    </Link>
-                </div>
-                <Link  target="_blank" href={`${go}`} className="rounded-3xl w-11 h-11 dark:bg-[#ffffff1f] bg-[#00000010]  hover:bg-[#78cc6d] dark:hover:bg-[#78cc6d] transition-all duration-300 ease-linear center -rotate-45 inline-block">
-                    <FaArrowRightLong className='dark:text-[#fff]' />
-                </Link>
-            </div>
+const ProjectCard = ({ img, title, subtitle, go,status="In Progress" }) => {
+  return (
+    <div className="rounded-2xl w-full xl:w-96 bg-[#ffffff1f] border-2 dark:border-[#ffffff1f]">
+      <div className="m-3">
+        <div className=" w-full xl:w-[352px] h-72 overflow-hidden rounded-xl">
+          <Image
+            className="w-full h-full object-cover"
+            src={img}
+            width="352"
+            height="288"
+            alt="project1"
+          />
         </div>
-    )
-}
+      </div>
+      <div className="mt-[18px] mb-[30px] mx-5 flex justify-between items-end">
+        <div>
+          <h3 className="font-medium text-[1.06rem] leading-[130%] text-[#0c0c0c] dark:text-[#fff]">
+            {title}
+          </h3>
+          <div className="flex items-center gap-2">
+            <Link
+              href="#"
+              className="font-normal text-xs leading-[170%] uppercase dark:text-[#999] py-1 px-4 bg-[#00000010] text-[#000] dark:bg-[#ffffff1f]  dark:hover:bg-[#78cc6d] dark:hover:text-[#fff] hover:bg-[#78cc6d] transition-all duration-300 ease-linear mt-2 rounded-3xl inline-block"
+            >
+              {subtitle}
+            </Link>
+            <h4
+              href="#"
+              className="font-normal text-xs leading-[170%] uppercase py-1 px-4 text-[#000] bg-[#78cc6d] transition-all duration-300 ease-linear mt-2 rounded-3xl inline-block"
+            >
+              {status}
+            </h4>
+          </div>
+        </div>
+        <Link
+          target="_blank"
+          href={`${go}`}
+          className="rounded-3xl w-11 h-11 dark:bg-[#ffffff1f] bg-[#00000010]  hover:bg-[#78cc6d] dark:hover:bg-[#78cc6d] transition-all duration-300 ease-linear center -rotate-45 inline-block"
+        >
+          <FaArrowRightLong className="dark:text-[#fff]" />
+        </Link>
+      </div>
+    </div>
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

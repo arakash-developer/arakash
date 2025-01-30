@@ -1,5 +1,12 @@
 const ProjectData = [
     {
+        id:5,
+        title:"Covan is a Beauty ECommerce",
+        image:"/projects/covan.png",
+        subtitle:"mern",
+        go:"https://covan.vercel.app/",
+    },
+    {
         id:4,
         title:"TechStore is a Tech ECommerce",
         image:"/projects/techstore.png",
@@ -12,6 +19,7 @@ const ProjectData = [
         image:"/projects/orebi.jpg",
         subtitle:"next",
         go:"https://orebi10.vercel.app/",
+        status:"Completed",
     },
     {
         id:5,
@@ -19,6 +27,7 @@ const ProjectData = [
         image:"/projects/somru.jpg",
         subtitle:"basic",
         go:"https://somruvercelapp.vercel.app/",
+        status:"Completed",
     },
     {
         id:4,
@@ -26,6 +35,7 @@ const ProjectData = [
         image:"/projects/orgafe.jpg",
         subtitle:"basic",
         go:"https://orgafe-basicvercelapp.vercel.app/",
+        status:"Completed",
     },
     {
         id:1,
@@ -33,6 +43,7 @@ const ProjectData = [
         image:"/projects/orebi.jpg",
         subtitle:"react",
         go:"https://orebi10.vercel.app/",
+        status:"Completed",
     },
 ]
 export default ProjectData;
