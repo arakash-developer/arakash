@@ -45,6 +45,14 @@ const ProjectData = [
         go:"https://orebi10.vercel.app/",
         status:"Completed",
     },
+    {
+        id:1,
+        title:"SlotUi | Design Web Templete",
+        image:"/projects/slotui.png",
+        subtitle:"basic",
+        go:"https://slotui.vercel.app/",
+        status:"Completed",
+    },
 ]
 export default ProjectData;
 
