@@ -5,33 +5,36 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --backdrop: linear-gradient(118deg, rgba(255, 255, 255, 0.02) 0%, rgba(0, 0, 0, 0.2) 100%);
+  --backdrop: linear-gradient(
+    118deg,
+    rgba(255, 255, 255, 0.02) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
 }
-.backdropcolor{
+.backdropcolor {
   background: var(--backdrop);
 }
 
-html,body{
+html,
+body {
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth !important;
 }
-/* add the code bellow */ 
+/* add the code bellow */
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
-      display: none;
+    display: none;
+    scroll-behavior: smooth !important;
   }
- /* Hide scrollbar for IE, Edge and Firefox */
+  /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    scroll-behavior: smooth !important;
+  }
 }
-}
-.box-shadow{
+.box-shadow {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-/* Enable smooth scrolling for the entire page */
-html {
-  scroll-behavior: smooth;
 }
