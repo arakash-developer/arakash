@@ -30,21 +30,21 @@ const Navbar = ({className}) => {
             icon: faCode,
             go: "#skills",
         },
-        {
-            title: "services",
-            icon: faScrewdriverWrench,
-            go: "#services",
-        },
+        // {
+        //     title: "services",
+        //     icon: faScrewdriverWrench,
+        //     go: "#services",
+        // },
         {
             title: "resume",
             icon: faFilePdf,
             go: "#resume",
         },
-        {
-            title: "articles",
-            icon: faNewspaper,
-            go: "#articles",
-        },
+        // {
+        //     title: "articles",
+        //     icon: faNewspaper,
+        //     go: "#articles",
+        // },
         {
             title: "contact",
             icon: faPaperPlane,
