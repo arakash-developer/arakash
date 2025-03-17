@@ -1,7 +1,7 @@
 "use client";
 import { Contex } from "@/app/contex/DarkContext";
-// import Akash5 from '@/public/akash5.png'
-import Akash5 from "@/public/akash.gif";
+import Akash5 from '@/public/akash5.png'
+// import Akash5 from "@/public/akash.gif";
 import {
   faFacebook,
   faGithub,
