@@ -12,9 +12,9 @@ const Technologies = ({ skillName, percent, icon }) => {
       </div>
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 dark:bg-[#ffffff1f] w-[90%] xl:w-[335px] h-1 rounded">
         <div
-          style={{
-            width: `${percent}%`,
-          }}
+          // style={{
+          //   width: `${percent}%`,
+          // }}
           className={`progress h-full bg-[#78cc6d] rounded`}
         ></div>
       </div>
