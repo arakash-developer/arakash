@@ -55,21 +55,21 @@ const Technology = () => {
           </div>
           <div className="flex flex-col md:flex-row gap-5 mt-7">
             <Technologies
+              skillName="Redux"
+              percent={90}
+              icon={<TbBrandRedux className="w-10 h-10" />}
+            />
+            <Technologies
               skillName="Next"
               percent={90}
               icon={<SiNextdotjs className="w-10 h-10" />}
             />
+          </div>
+          <div className="flex flex-col md:flex-row gap-5 mt-7">
             <Technologies
               skillName="React"
               percent={90}
               icon={<RiReactjsLine className="w-10 h-10" />}
-            />
-          </div>
-          <div className="flex flex-col md:flex-row gap-5 mt-7">
-            <Technologies
-              skillName="Redux"
-              percent={90}
-              icon={<TbBrandRedux className="w-10 h-10" />}
             />
             <Technologies
               skillName="Js"
