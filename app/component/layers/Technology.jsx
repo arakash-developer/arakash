@@ -56,7 +56,7 @@ const Technology = () => {
           <div className="flex flex-col md:flex-row gap-5 mt-7">
             <Technologies
               skillName="Redux"
-              percent={90}
+              percent={9}
               icon={<TbBrandRedux className="w-10 h-10" />}
             />
             <Technologies
