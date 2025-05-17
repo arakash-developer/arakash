@@ -32,24 +32,24 @@ const Technology = () => {
           <div className="flex flex-col md:flex-row gap-5">
             <Technologies
               skillName="TypeScript"
-              percent={90}
+              percent={40}
               icon={<SiTypescript className="w-10 h-10" />}
             />
             <Technologies
               skillName="MongoDB"
-              percent={90}
+              percent={30}
               icon={<SiMongodb className="w-10 h-10" />}
             />
           </div>
           <div className="flex flex-col md:flex-row gap-5 mt-7">
             <Technologies
               skillName="Express"
-              percent={90}
+              percent={50}
               icon={<SiExpress className="w-10 h-10" />}
             />
             <Technologies
               skillName="Node"
-              percent={90}
+              percent={40}
               icon={<FaNode className="w-10 h-10" />}
             />
           </div>
