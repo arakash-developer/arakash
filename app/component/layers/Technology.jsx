@@ -2,7 +2,9 @@ import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaNode } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io5";
-import { RiReactjsLine } from "react-icons/ri";
+import { RiPhpFill, RiReactjsLine } from "react-icons/ri";
+import { SiMysql } from "react-icons/si";
+
 import {
   SiExpress,
   SiMongodb,
@@ -75,6 +77,18 @@ const Technology = () => {
               skillName="Js"
               percent={90}
               icon={<IoLogoNodejs className="w-10 h-10" />}
+            />
+          </div>
+          <div className="flex flex-col md:flex-row gap-5 mt-7">
+            <Technologies
+              skillName="MySQL"
+              percent={90}
+              icon={<SiMysql className="w-10 h-10" />}
+            />
+            <Technologies
+              skillName="Php"
+              percent={90}
+              icon={<RiPhpFill className="w-10 h-10" />}
             />
           </div>
         </div>
