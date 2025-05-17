@@ -1,5 +1,4 @@
 const Technologies = ({ skillName, percent, icon }) => {
-  let wid = `w-[${percent}]`;
   return (
     <div className="skill rounded-2xl w-full lg:w-96 h-28 border-2 dark:text-[#fff] text-[#0c0c0c] dark:border-[#ffffff1f] pl-8 flex items-center relative">
       {icon}
@@ -12,7 +11,7 @@ const Technologies = ({ skillName, percent, icon }) => {
         </p>
       </div>
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 dark:bg-[#ffffff1f] w-[90%] xl:w-[335px] h-1 rounded">
-        <div className={`progress h-full bg-[#78cc6d] rounded ${wid}`}></div>
+        <div className={`progress h-full bg-[#78cc6d] rounded w-[${percent}%]`}></div>
       </div>
     </div>
   );
