@@ -29,7 +29,7 @@ const Profile = ({ className }) => {
           </div>
           <div className="mt-[49px] mb-0">
             <h3 className="font-normal text-sm leading-[170%] uppercase text-center text-[#78cc6d]">
-              next js developer
+              Mern Stack Developer
             </h3>
             <h2 className="mt-2 font-semibold text-3xl leading-[107%] text-center dark:text-[#fff] text-[#0c0c0c]">
               AR AKASH
@@ -90,7 +90,7 @@ const Profile = ({ className }) => {
         </div>
         <div className="button flex justify-between ">
           <a
-            href="/me.pdf"
+            href="/atiqurrahmanakash.pdf"
             download="Atiqur Rahman Akash"
             className="w-1/2 font-semibold text-sm text-center py-6 border-t-2 border-r dark:border-[#ffffff1f] rounded-bl-3xl"
           >
