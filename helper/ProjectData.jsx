@@ -31,6 +31,14 @@ const ProjectData = [
   },
   {
     id: 5,
+    title: "Finest Process Management | FPM",
+    image: "/projects/fpm.png",
+    subtitle: "Php",
+    go: "https://finestprocess.com/",
+    status: "Completed",  
+  },
+  {
+    id: 5,
     title: "Orgafe | Ecomarce Web Templete",
     image: "/projects/orgafe.jpg",
     subtitle: "basic",
