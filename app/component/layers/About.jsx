@@ -9,7 +9,7 @@ const About = () => {
                 <p className='py-8 font-normal text-sm leading-[170%] dark:text-[#eaeaea] text-[#0c0c0cd3]'>Have worked in a variety of positions, including key developer, solution designer, and data architect.
                     Strong engineering background combined with closely working with business customers.
                 </p>
-                <div className="flex flex-wrap items-start sm:flex-row justify-start md:items-center gap-2 md:gap-14 lg:gap-2 xl:gap-[100px]">
+                <div className="flex flex-wrap items-start sm:flex-row justify-start md:items-center gap-2 md:gap-14 lg:gap-2 xl:gap-[80px]">
                     <div className="flex gap-[20px] items-center">
                         <h2 className='font-normal text-6xl leading-[140%] dark:text-[#fff] text-[#0c0c0c]'>10+</h2>
                         <p className='font-normal text-sm leading-[170%] dark:text-[#eaeaea] max-w-[80px]'>Completed Projects</p>
