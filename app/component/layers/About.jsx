@@ -19,8 +19,8 @@ const About = () => {
                         <p className='font-normal text-sm leading-[170%] dark:text-[#eaeaea] max-w-[80px]'>Years of Experience</p>
                     </div>
                     <div className="flex gap-[20px] items-center">
-                        <h2 className='font-normal text-6xl leading-[140%] dark:text-[#fff] text-[#0c0c0c]'>10+</h2>
-                        <p className='font-normal text-sm leading-[170%] dark:text-[#eaeaea] max-w-[80px]'>Awards Winning</p>
+                        <h2 className='font-normal text-6xl leading-[140%] dark:text-[#fff] text-[#0c0c0c]'>20+</h2>
+                        <p className='font-normal text-sm leading-[170%] dark:text-[#eaeaea] max-w-[80px]'>Problem Solved</p>
                     </div>
                 </div>
             </div>
