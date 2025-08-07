@@ -1,0 +1,36 @@
+name: Deploy Next.js to FTP
+
+on:
+  push:
+    branches:
+      - main  # or your default branch
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # or your version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Next.js export
+        run: npm run build && npm run export
+
+      - name: Upload to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ftp.arakash.com
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          local-dir: ./out
+          server-dir: /  # Root directory on FTP - change if you want a subfolder
+          secure: false  # Set to true if you want FTPS explicit (you can try true)
