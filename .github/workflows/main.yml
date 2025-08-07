@@ -21,11 +21,21 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Clear Next.js cache
+        run: rm -rf .next out
+
       - name: Build Next.js
         run: npm run build
 
       - name: List build output
         run: ls -la ./out/
+
+      - name: Show file count and sizes
+        run: |
+          echo "Total files to deploy:"
+          find ./out -type f | wc -l
+          echo "Build output size:"
+          du -sh ./out/
 
       - name: Add timestamp to force cache invalidation
         run: echo "$(date)" > ./out/deployment-timestamp.txt
@@ -38,14 +48,16 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: ./out/
-          server-dir: / # Root directory on FTP - change if you want a subfolder
-          security: loose # Use "loose" for standard FTP or "strict" for FTPS
+          server-dir: /
+          security: loose
           dry-run: false
           log-level: verbose
-          dangerous-clean-slate: false
+          dangerous-clean-slate: true
           exclude: |
             **/.git*
             **/.git*/**
             **/node_modules/**
             **/.DS_Store
             **/.env*
+            .github/
+          state-name: .ftp-deploy-sync-state.json
