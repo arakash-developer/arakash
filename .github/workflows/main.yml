@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build Next.js export
+      - name: Build Next.js 
         run: next build && next-sitemap
 
       - name: Upload to FTP server
