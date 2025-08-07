@@ -25,6 +25,7 @@ const Profile = ({ className }) => {
               className="h-full w-full object-cover"
               src={Akash5}
               alt="Akash"
+              unoptimized
             />
           </div>
           <div className="mt-[49px] mb-0">
