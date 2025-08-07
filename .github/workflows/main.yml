@@ -3,7 +3,7 @@ name: Deploy Next.js to FTP
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main # or your default branch
 
 jobs:
   ftp-deploy:
@@ -16,13 +16,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # or your version
+          node-version: "18" # or your version
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build Next.js 
-        run: next build && next-sitemap
+      - name: Build Next.js
+        run: npx next build && npx next-sitemap
 
       - name: Upload to FTP server
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
@@ -32,5 +32,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: ./out
-          server-dir: /  # Root directory on FTP - change if you want a subfolder
-          secure: false  # Set to true if you want FTPS explicit (you can try true)
+          server-dir: / # Root directory on FTP - change if you want a subfolder
+          secure: false # Set to true if you want FTPS explicit (you can try true)
