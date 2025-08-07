@@ -1,4 +1,4 @@
-name: Deploy Next.js to FTP
+name: Deploy Next.js to FTP (Full Replace)
 
 on:
   push:
@@ -13,32 +13,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Cache Node.js dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
       - name: Install dependencies
-        run: |
-          npm ci
+        run: npm ci
 
       - name: Build and export static site
-        run: |
-          npm run build
+        run: npm run build
 
-      - name: Add deployment timestamp (cache bust)
-        run: |
-          echo "Built at: $(date)" > ./out/deployment-timestamp.txt
+      - name: Add deployment timestamp (optional)
+        run: echo "Built at: $(date)" > ./out/deployment-timestamp.txt
 
-      - name: Deploy via FTP (sync with add/update/delete)
+      - name: Deploy via FTP (full replace)
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ftp.arakash.com
@@ -46,12 +35,11 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: ./out/
-          server-dir: /public_html/  # change if your FTP root folder is different
+          server-dir: /public_html/ # Change if needed
           security: loose
           dry-run: false
           log-level: verbose
-          # WARNING: do NOT use dangerous-clean-slate: true if you want to keep untracked files on FTP
-          # This setup will remove deleted files automatically thanks to the action's sync feature
+          dangerous-clean-slate: true   # <---- This forces full wipe & replace
           exclude: |
             **/.git*
             **/node_modules/**
