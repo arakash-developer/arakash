@@ -27,7 +27,7 @@ jobs:
           node-version: "18"
 
       - name: Install dependencies
-        run: npm ci # much faster than `npm install` for CI
+        run: npm ci  # much faster than npm install in CI
 
       - name: Build static site
         run: npm run build
@@ -43,7 +43,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: ./out/
-          server-dir: /public_html/ # <-- adjust if needed
+          server-dir: /public_html/  # <-- adjust based on your hosting
           security: loose
           dry-run: false
           log-level: minimal
