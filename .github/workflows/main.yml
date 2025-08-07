@@ -24,16 +24,19 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: '18'
 
       - name: Install dependencies
-        run: npm ci  # much faster than npm install in CI
+        run: |
+          npm ci
 
       - name: Build static site
-        run: npm run build
+        run: |
+          npm run build
 
       - name: Add timestamp to force cache invalidation
-        run: echo "Built at: $(date)" > ./out/deployment-timestamp.txt
+        run: |
+          echo "Built at: $(date)" > ./out/deployment-timestamp.txt
 
       - name: Upload to FTP server
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
@@ -43,7 +46,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: ./out/
-          server-dir: /public_html/  # <-- adjust based on your hosting
+          server-dir: /public_html/
           security: loose
           dry-run: false
           log-level: minimal
