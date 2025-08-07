@@ -10,28 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18" # or your version
+          node-version: "18"
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build Next.js
+      - name: Build and export Next.js app
         run: npm run build
 
-      - name: List build output
+      - name: Show contents of out folder
         run: ls -la ./out/
 
-      - name: Add timestamp to force cache invalidation
-        run: echo "$(date)" > ./out/deployment-timestamp.txt
-
-      - name: Clear any existing sync state
-        run: rm -f ./.ftp-deploy-sync-state.json || true
+      - name: Add cache-busting timestamp
+        run: echo "Deployed at: $(date)" > ./out/deployment-timestamp.txt
 
       - name: Upload to FTP server
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
@@ -41,15 +38,13 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: ./out/
-          server-dir: / # Root directory on FTP - change if you want a subfolder
-          security: loose # Use "loose" for standard FTP or "strict" for FTPS
+          server-dir: /public_html/ # <-- Update this to your actual root folder
+          security: loose
           dry-run: false
           log-level: verbose
           dangerous-clean-slate: true
           exclude: |
             **/.git*
-            **/.git*/**
             **/node_modules/**
             **/.DS_Store
             **/.env*
-            **/.ftp-deploy-sync-state.json
