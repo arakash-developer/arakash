@@ -33,7 +33,7 @@ const Profile = ({ className }) => {
           Full Stack Developer
             </h3>
             <h2 className="mt-2 font-semibold text-3xl leading-[107%] text-center dark:text-[#fff] text-[#0c0c0c]">
-              AR AKASH!
+              AR AKASH
             </h2>
             <div className="icon mt-5 flex gap-2 justify-center items-center">
               <Link
