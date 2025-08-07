@@ -86,7 +86,7 @@ const Contact = () => {
                 <div className="flex justify-between items-center flex-col md:flex-row gap-8">
                     <div className="flex items-center justify-between bg-[#ffffff11] border-2 dark:border-[#ffffff1f] rounded-2xl w-full md:w-96 xl:w-[420px] h-24 px-5">
                         <div className="">
-                            <Image src={Phone} alt="Phone" />
+                            <Image src={Phone} alt="Phone" unoptimized />
                         </div>
                         <div className="">
                             <h3 className='font-normal text-base leading-[170%] uppercase text-[#0c0c0c] dark:text-[#eaeaea]'>+880 19902463303</h3>
@@ -94,7 +94,7 @@ const Contact = () => {
                     </div>
                     <div className="flex items-center justify-between bg-[#ffffff11] border-2 dark:border-[#ffffff1f] rounded-2xl w-full md:w-96 xl:w-[420px] h-24 px-5">
                         <div>
-                            <Image src={Mail} alt="mail" />
+                            <Image src={Mail} alt="mail" unoptimized />
                         </div>
                         <div className="">
                             <h3 className='font-normal text-base leading-[170%] lowercase text-[#0c0c0c] dark:text-[#eaeaea]'>arakash.developer@gmail.com</h3>
@@ -103,7 +103,7 @@ const Contact = () => {
                 </div>
                 <div className="mt-8 flex items-center justify-between px-5 bg-[#ffffff11] border-2 dark:border-[#ffffff1f] rounded-2xl w-full h-24">
                     <div className="">
-                        <Image src={Address} alt="Address" />
+                        <Image src={Address} alt="Address" unoptimized />
                     </div>
                     <div className="">
                         <h3 className='font-normal tracking-[2px] text-base leading-[170%] uppercase text-[#0c0c0c] dark:text-[#eaeaea] font-poppins'>Farmgate, Dhaka, Bangladesh</h3>
