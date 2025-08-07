@@ -9,7 +9,7 @@ https://realfavicongenerator.net/
 opengraph image recomandation size is : 1200X630px
 app > opengraph-image.png
 
-
+AKASH
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
