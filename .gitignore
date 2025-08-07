@@ -41,4 +41,5 @@ next-env.d.ts
 
 # zip files
 *.zip
+next-sitemap.config.zip
 node_modules
