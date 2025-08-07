@@ -22,7 +22,13 @@ jobs:
         run: npm install
 
       - name: Build Next.js
-        run: npx next build && npx next-sitemap
+        run: npm run build
+
+      - name: List build output
+        run: ls -la ./out/
+
+      - name: Add timestamp to force cache invalidation
+        run: echo "$(date)" > ./out/deployment-timestamp.txt
 
       - name: Upload to FTP server
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
@@ -34,3 +40,12 @@ jobs:
           local-dir: ./out/
           server-dir: / # Root directory on FTP - change if you want a subfolder
           security: loose # Use "loose" for standard FTP or "strict" for FTPS
+          dry-run: false
+          log-level: verbose
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.DS_Store
+            **/.env*
