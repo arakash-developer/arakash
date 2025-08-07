@@ -19,13 +19,16 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm ci
 
       - name: Build and export static site
-        run: npm run build
+        run: |
+          npm run build
 
       - name: Add deployment timestamp (optional)
-        run: echo "Built at: $(date)" > ./out/deployment-timestamp.txt
+        run: |
+          echo "Built at: $(date)" > ./out/deployment-timestamp.txt
 
       - name: Deploy via FTP (full replace)
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
@@ -35,11 +38,11 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: ./out/
-          server-dir: /public_html/ # Change if needed
+          server-dir: /public_html/
           security: loose
           dry-run: false
           log-level: verbose
-          dangerous-clean-slate: true   # <---- This forces full wipe & replace
+          dangerous-clean-slate: true
           exclude: |
             **/.git*
             **/node_modules/**
