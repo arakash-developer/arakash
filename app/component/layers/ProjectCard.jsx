@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-const ProjectCard = ({ img, title, subtitle, go,status="In Progress" }) => {
+const ProjectCard = ({ img, title, subtitle, go, status = "In Progress" }) => {
   return (
     <div className="rounded-2xl w-full xl:w-96 bg-[#ffffff1f] border-2 dark:border-[#ffffff1f]">
       <div className="m-3">
@@ -13,6 +13,7 @@ const ProjectCard = ({ img, title, subtitle, go,status="In Progress" }) => {
             width="352"
             height="288"
             alt="project1"
+            unoptimized
           />
         </div>
       </div>

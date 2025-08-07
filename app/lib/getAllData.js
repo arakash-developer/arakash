@@ -1,8 +1,8 @@
 const getAllData = async () => {
     const blops = await fetch("https://akashapi.vercel.app/read",
         {
-            // cache:"force-cache",
-            cache:"no-store",
+            cache:"force-cache",
+            // cache:"no-store",
             // next: {
             //     revalidate : 1,
             // }    
