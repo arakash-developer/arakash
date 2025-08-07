@@ -31,6 +31,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
-          local-dir: ./out
+          local-dir: ./out/
           server-dir: / # Root directory on FTP - change if you want a subfolder
-          secure: false # Set to true if you want FTPS explicit (you can try true)
+          security: false # Set to true if you want FTPS explicit (you can try true)
