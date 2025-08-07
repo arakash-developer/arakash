@@ -30,7 +30,7 @@ const Profile = ({ className }) => {
           </div>
           <div className="mt-[49px] mb-0">
             <h3 className="font-normal text-sm leading-[170%] uppercase text-center text-[#78cc6d]">
-          Full Stack Developer
+          Full Stack Developer!
             </h3>
             <h2 className="mt-2 font-semibold text-3xl leading-[107%] text-center dark:text-[#fff] text-[#0c0c0c]">
               AR AKASH
