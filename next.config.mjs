@@ -1,13 +1,12 @@
-/** @type {import('next').NextConfig} */
+ /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  trailingSlash: true, // optional but recommended for FTP hosting
+  reactStrictMode: true,
 
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**",
+        hostname: "**", // allow all remote images
       },
     ],
   },
