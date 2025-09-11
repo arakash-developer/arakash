@@ -34,14 +34,15 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
-          local-dir: ./           # send everything from repo root
-          server-dir: /           # adjust if your host requires /public_html or /htdocs
+          local-dir: ./
+          server-dir: /
           security: loose
           dry-run: false
           log-level: verbose
           dangerous-clean-slate: true
           exclude: |
             **/node_modules/**
+            **/.git/**
             **/.git*
             **/.DS_Store
             **/.env*
