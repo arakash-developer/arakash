@@ -19,16 +19,13 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: |
-          npm ci
+        run: npm ci
 
-      - name: Build and export static site
-        run: |
-          npm run build
+      - name: Build Next.js app
+        run: npm run build   # this creates the .next folder
 
       - name: Add deployment timestamp (optional)
-        run: |
-          echo "Built at: $(date)" > ./out/deployment-timestamp.txt
+        run: echo "Built at: $(date)" > ./deployment-timestamp.txt
 
       - name: Deploy via FTP (full replace)
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
@@ -37,14 +34,15 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
-          local-dir: ./
-          server-dir: /
+          local-dir: ./           # send everything from repo root
+          server-dir: /           # adjust if your host requires /public_html or /htdocs
           security: loose
           dry-run: false
           log-level: verbose
           dangerous-clean-slate: true
           exclude: |
-            **/.git*
             **/node_modules/**
+            **/.git*
             **/.DS_Store
             **/.env*
+            **/npm-debug.log*
