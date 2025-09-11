@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Build Next.js app
-        run: npm run build   # this creates the .next folder
+        run: npm run build
 
       - name: Add deployment timestamp (optional)
         run: echo "Built at: $(date)" > ./deployment-timestamp.txt
@@ -40,10 +40,4 @@ jobs:
           dry-run: false
           log-level: verbose
           dangerous-clean-slate: true
-          exclude: |
-            **/node_modules/**
-            **/.git/**
-            **/.git*
-            **/.DS_Store
-            **/.env*
-            **/npm-debug.log*
+          exclude: "**/node_modules/**, **/.git/**, **/.DS_Store, **/.env*, **/npm-debug.log*"
