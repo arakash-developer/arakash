@@ -14,7 +14,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 akash
-arakash@arakash.com
+arakash@arakash.comdd
 updatedFirst, run the development server:
 
 ```bash
