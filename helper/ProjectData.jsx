@@ -31,6 +31,22 @@ const ProjectData = [
   },
   {
     id: 4,
+    title: "Robodemy is a Robotics & AI Education Company",
+    image: "/projects/robodemy.png",
+    subtitle: "wordpress",
+    go: "https://robodemybd.com/",
+    status: "Completed",
+  },
+  {
+    id: 4,
+    title: "Havetic is a Leading Software Company in Bangladesh",
+    image: "/projects/havetic.png",
+    subtitle: "basic",
+    go: "https://havetic.com/",
+    status: "Completed",
+  },
+  {
+    id: 4,
     title: "Somru is an BioScience Company",
     image: "/projects/somru.jpg",
     subtitle: "basic",
