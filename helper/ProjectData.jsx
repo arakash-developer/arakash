@@ -82,10 +82,10 @@ const ProjectData = [
   },
   {
     id: 4,
-    title: "Somru is an BioScience Company",
+    title: "Biosolpoint is an BioScience Company",
     image: "/projects/somru.jpg",
     subtitle: "basic",
-    go: "https://somruvercelapp.vercel.app/",
+    go: "https://biosolpoint.com/",
     status: "Completed",
   },
   {
