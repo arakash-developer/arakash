@@ -98,6 +98,14 @@ const ProjectData = [
   },
   {
     id: 4,
+    title: "Learn Shotokan Karate, Be Stronger Every Day",
+    image: "/projects/carate.png",
+    subtitle: "basic",
+    go: "https://sobhankarateacademy.com/",
+    status: "Completed",
+  },
+  {
+    id: 4,
     title: "Biosolpoint is an BioScience Company",
     image: "/projects/somru.jpg",
     subtitle: "basic",
