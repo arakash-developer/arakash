@@ -40,7 +40,7 @@ const ProjectCard = ({ img, title, subtitle, go, status = "In Progress" }) => {
         <Link
           target="_blank"
           href={`${go}`}
-          className="rounded-3xl w-11 h-11 dark:bg-[#ffffff1f] bg-[#00000010]  hover:bg-[#78cc6d] dark:hover:bg-[#78cc6d] transition-all duration-300 ease-linear center -rotate-45 inline-block"
+          className="flex-shrink-0 rounded-3xl w-11 h-11 dark:bg-[#ffffff1f] bg-[#00000010]  hover:bg-[#78cc6d] dark:hover:bg-[#78cc6d] transition-all duration-300 ease-linear center -rotate-45 inline-block"
         >
           <FaArrowRightLong className="dark:text-[#fff]" />
         </Link>
