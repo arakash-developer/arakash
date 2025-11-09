@@ -1,20 +1,6 @@
 const ProjectData = [
   {
     id: 1,
-    title: "Asset Management International",
-    image: "/projects/4ami.png",
-    subtitle: "mern",
-    go: "https://4ami.com/",
-  },
-  {
-    id: 1,
-    title: "Zahid is a Creative Digital Product Designer",
-    image: "/projects/newaz.png",
-    subtitle: "next",
-    go: "https://zahidnewaz.vercel.app/",
-  },
-  {
-    id: 1,
     title: "Covan is a Beauty ECommerce",
     image: "/projects/covan.png",
     subtitle: "next",
@@ -23,10 +9,10 @@ const ProjectData = [
   },
   {
     id: 1,
-    title: "Covan is a Beauty ECommerce",
-    image: "/projects/covan.png",
-    subtitle: "mern",
-    go: "https://covan.vercel.app/",
+    title: "Zahid is a Creative Digital Product Designer",
+    image: "/projects/newaz.png",
+    subtitle: "next",
+    go: "https://zahidnewaz.vercel.app/",
     status: "Completed",
   },
   {
@@ -37,6 +23,32 @@ const ProjectData = [
     go: "https://techstore100.vercel.app/",
   },
   {
+    id: 1,
+    title: "Asset Management International",
+    image: "/projects/4ami.png",
+    subtitle: "react",
+    go: "https://ami-smoky.vercel.app/",
+    status: "Completed",
+  },
+  {
+    id: 1,
+    title: "BD Luminaries is a Sustainable Lighting Company",
+    image: "/projects/bdluminaries.png",
+    subtitle: "react",
+    go: "https://bdluminaries.com/",
+    status: "Completed",
+  },
+
+  {
+    id: 1,
+    title: "Covan is a Beauty ECommerce",
+    image: "/projects/covan.png",
+    subtitle: "mern",
+    go: "https://covan.vercel.app/",
+    status: "Completed",
+  },
+
+  {
     id: 3,
     title: "Orebi | Ecomarce Web Templete",
     image: "/projects/orebi.jpg",
@@ -46,7 +58,7 @@ const ProjectData = [
   },
   {
     id: 4,
-    title: "AMI is a Asset Management Company",
+    title: "AMI is a Asset Management Company(SASS)",
     image: "/projects/4amiweb.png",
     subtitle: "wordpress",
     go: "https://4ami.com/",
