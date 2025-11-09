@@ -1,10 +1,18 @@
 const ProjectData = [
   {
     id: 1,
+    title: "Asset Management International",
+    image: "/projects/4ami.png",
+    subtitle: "mern",
+    go: "https://4ami.com/",
+  },
+  {
+    id: 1,
     title: "Covan is a Beauty ECommerce",
     image: "/projects/covan.png",
     subtitle: "mern",
     go: "https://covan.vercel.app/",
+    status: "Completed",
   },
   {
     id: 2,
@@ -35,7 +43,7 @@ const ProjectData = [
     image: "/projects/fpm.png",
     subtitle: "Php",
     go: "https://finestprocess.com/",
-    status: "Completed",  
+    status: "Completed",
   },
   {
     id: 5,
