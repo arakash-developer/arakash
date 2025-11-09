@@ -31,6 +31,14 @@ const ProjectData = [
   },
   {
     id: 4,
+    title: "AMI is a Asset Management Company",
+    image: "/projects/4amiweb.png",
+    subtitle: "wordpress",
+    go: "https://4ami.com/",
+    status: "Completed",
+  },
+  {
+    id: 4,
     title: "Robodemy is a Robotics & AI Education Company",
     image: "/projects/robodemy.png",
     subtitle: "wordpress",
