@@ -8,6 +8,21 @@ const ProjectData = [
   },
   {
     id: 1,
+    title: "Zahid is a Creative Digital Product Designer",
+    image: "/projects/newaz.png",
+    subtitle: "next",
+    go: "https://zahidnewaz.vercel.app/",
+  },
+  {
+    id: 1,
+    title: "Covan is a Beauty ECommerce",
+    image: "/projects/covan.png",
+    subtitle: "next",
+    go: "https://covan.vercel.app/",
+    status: "Completed",
+  },
+  {
+    id: 1,
     title: "Covan is a Beauty ECommerce",
     image: "/projects/covan.png",
     subtitle: "mern",
